@@ -35,17 +35,33 @@ export function Products() {
     setTotalPrice((prevPrice) => prevPrice + price);
   }
 
-  const decreaseCount = (id: string, price: number) => {
+  const decreaseCount = ({id, price, count}:CartProducts) => {
     setProduct(prevProducts => {
       return prevProducts.map(p => {
-        if(p.id === id && p.count > 0) {
+        if(p.id === id && p.count > 1) {
           return {...p, count: p.count - 1};
         } else {
           return p
         }
       })
     })
-    setTotalPrice((prevPrice) => prevPrice - price);
+
+    setTotalPrice((prevPrice) => {
+      if(prevPrice > 0 && count > 1) {
+        return prevPrice - price
+      } else {
+        return prevPrice
+      }
+    });
+  }
+
+  const removeProduct = ({id, price, count}: CartProducts) => {
+    setProduct(prevProducts => {
+      return prevProducts.filter(p => p.id !== id)
+    })
+    const totalProductPrice = price * count
+
+    setTotalPrice(prevPrice => prevPrice - totalProductPrice)
   }
 
   const products = [
@@ -82,7 +98,9 @@ export function Products() {
       </div>
       <div>
       <div className="bg-white aspect-square w-[300px] flex justify-center items-center flex-col gap-10">
-        {product.map(product => {
+        {product.length > 0
+        ?
+        product.map(product => {
           return (
             <div
             key={product.id}
@@ -92,15 +110,27 @@ export function Products() {
               <p>{product.count}</p>
               <div className="flex gap-10">
               <button
+              className="text-5xl"
               onClick={() => increaseCount(product.id, product.price)}
               >+</button>
               <button
-              onClick={() => decreaseCount(product.id, product.price)}
+              className="text-5xl"
+              disabled={product.count === 1 ? true : false}
+              onClick={() => decreaseCount(product)}
               >-</button>
               </div>
+              <button
+              onClick={() => removeProduct(product)}
+              className="text-red">
+                Remove
+              </button>
             </div>
           )
-        })}
+        })
+        :
+        <h1>Your cart is empty</h1>
+        // tu bude nejaky obrazok smutnej postavicky
+      }
         </div>
       </div>
     </div>
