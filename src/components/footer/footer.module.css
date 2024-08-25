@@ -1,0 +1,21 @@
+.icon{
+    color: #244ad5;
+    transition: all .2s ease;
+}
+
+.icon:hover{
+    color: white;
+    transform: scale(1.1);
+}
+
+.button {
+    transition: all 0.2s ease;
+}
+
+.button:hover {
+    transform: scale(1.05);
+}
+
+.button:active {
+    transform: scale(0.95);
+}

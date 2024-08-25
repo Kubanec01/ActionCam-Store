@@ -1,0 +1,6 @@
+
+.coloredTitle {
+    background-image: linear-gradient(43deg, #BF0AA1 , #F27D16,#F24141);
+    -webkit-background-clip: text;
+    color: transparent;
+}
