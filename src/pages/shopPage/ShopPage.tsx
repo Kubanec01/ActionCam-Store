@@ -1,5 +1,6 @@
 import { ShopNavbar } from "../../components/navbars/shopNavbar/ShopNavbar"
-import { ShopHero } from "./ShopHero"
+import { ShopHero } from "./hero/ShopHero"
+import { CamerasStore } from "./home/camerasStore/CamerasStore"
 
 
 export function ShopPage() {
@@ -7,6 +8,7 @@ export function ShopPage() {
         <div className="overflow-hidden">
             <ShopNavbar />
             <ShopHero />
+            <CamerasStore />
         </div>
     )
 }
