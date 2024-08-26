@@ -1,7 +1,7 @@
 import { Navigate, Route, Routes } from "react-router-dom";
 import { MainPage } from "../pages/mainPage/MainPage";
 import { AboutPage } from "../pages/aboutPage/AboutPage";
-import { ShopPage } from "../pages/shopPage/shopPage";
+import { ShopPage } from "../pages/shopPage/ShopPage";
 
 export function MainRoutes() {
   return (

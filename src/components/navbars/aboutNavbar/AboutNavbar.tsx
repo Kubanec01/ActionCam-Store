@@ -35,7 +35,7 @@ export function AboutNavbar() {
               <img className="object-cover w-full" src={logoImg} alt="" />
           </Navbar.Brand>
           <Nav className="flex justify-center items-center max-w-[400px] mr-[2.5rem] gap-16">
-            <Link to="" className="text-[#ffffffdc] text-2xl">
+            <Link to="/shop" className="text-[#ffffffdc] text-2xl">
               Shop
             </Link>
             <Link to="/" className="w text-[#ffffffdc] text-2xl">
@@ -62,7 +62,7 @@ export function AboutNavbar() {
               Our Story
             </a>
             {/* routes links */}
-            <Link className={link} to="">
+            <Link className={link} to="/shop">
               Shop
             </Link>
             <Link className={link} to="/">

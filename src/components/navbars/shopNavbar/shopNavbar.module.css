@@ -1,10 +1,17 @@
 .link {
     transition: all .2s ease;
-    background: transparent;
 }
 
 .link:hover {
     transform: translateY(-12%);
     color: white;
     text-shadow: 0 18px 4px rgba(255, 253, 253, 0.098);
+}
+
+.shoppingCartIcon {
+    transition: all .2s ease;
+}
+
+.shoppingCartIcon:hover {
+    color: white;
 }
