@@ -3,11 +3,11 @@ import style from "./shopHero.module.css";
 
 export function ShopHero() {
   return (
-    <div className="mt-[250px]">
+    <div className="mt-[280px]">
       {/* text */}
       <div className="max-w-[1900px] mx-auto h-[220px] flex items-center">
         <h1
-          className={`${style.title} text-[#b9b8b88d] text-8xl ml-12 font-normal`}
+          className={`${style.title} text-[#b9b8b893] text-8xl ml-12 font-normal opacity-90`}
         >
           Capture Anything,
           <span className={style.colorText}> Anywhere</span>.

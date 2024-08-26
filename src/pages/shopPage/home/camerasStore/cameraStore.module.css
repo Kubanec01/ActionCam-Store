@@ -1,0 +1,16 @@
+
+
+.colorText {
+    background-image: linear-gradient(43deg, #2B50C1, #8A1FE6, #E660FF, #FF8AE3);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.button {
+    transition: all .2s ease;
+}
+
+.button:hover {
+    color: rgb(131, 42, 249);
+    font-weight: 500;
+}

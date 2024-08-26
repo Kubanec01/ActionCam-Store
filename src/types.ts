@@ -20,7 +20,9 @@ export type CartProducts = ProductsInfo & {
 
 export type AllProducts = {
   id: string;
-  price: number;
+  image: string;
   name: string;
+  desc: string;
+  price: number;
 };
 // ----------------
