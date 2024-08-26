@@ -1,3 +1,4 @@
+// ADVENTURE -------------
 export type AdventureBars = {
   id: number;
   image: string;
@@ -5,9 +6,21 @@ export type AdventureBars = {
   description: string;
   delay: number;
 };
+// ----------------
 
-export type CartProducts = {
+// PRODUCTS -------------
+export type ProductsInfo = {
   id: string;
   price: number;
+};
+
+export type CartProducts = ProductsInfo & {
   count: number;
 };
+
+export type AllProducts = {
+  id: string;
+  price: number;
+  name: string;
+};
+// ----------------

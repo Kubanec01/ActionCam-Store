@@ -28,7 +28,7 @@ export function AboutNavbar() {
   });
 
   return (
-    <Navbar className="fixed z-[1000] w-full">
+    <Navbar className="fixed z-[1100] w-full">
       {isAtTop ? (
         <Container className="w-[70%] max-w-[1300px] mx-auto flex justify-between h-[9.375rem]">
           <Navbar.Brand className="flex items-center w-[18.75rem]">

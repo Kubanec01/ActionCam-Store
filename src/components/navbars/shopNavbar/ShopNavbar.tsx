@@ -1,49 +1,50 @@
-import { Container, Nav, Navbar, NavbarBrand } from "react-bootstrap";
-import image1 from "../../../assets/logo-img.png";
-import { MdOutlineCameraAlt } from "react-icons/md";
-import { LiaToolsSolid } from "react-icons/lia";
-import { CiSquareQuestion } from "react-icons/ci";
-import { RiHome2Line } from "react-icons/ri";
-import { FiShoppingCart } from "react-icons/fi";
+import { Button, Container, Nav } from "react-bootstrap";
+import Navbar from "react-bootstrap/Navbar";
+import { Link } from "react-router-dom";
+import style from "./shopNavbar.module.css";
+import { IoCameraOutline } from "react-icons/io5";
+import { AiOutlineStar } from "react-icons/ai";
+import { HiOutlineHome } from "react-icons/hi2";
+import { AiOutlineQuestion } from "react-icons/ai";
+import { PiShoppingCartLight } from "react-icons/pi";
 
 export function ShopNavbar() {
+  // STYLES
+  const link = `${style.link}`;
+  const linkIcon = "mx-auto text-3xl";
+
   return (
-    <Navbar
-      style={{
-        backdropFilter: "blur(10px)",
-      }}
-      className="w-full h-[140px] bg-[#24242491] fixed"
-    >
-      <Container className="flex justify-between w-[60%] mx-auto h-full items-center">
-        {/* IMAGE */}
-        <NavbarBrand className="w-[33.3%]">
-          <img className="object-cover w-[60%]" src={image1} alt="logo-img" />
-        </NavbarBrand>
-        {/* LINKS */}
-        <ul className="text-white flex justify-between items-center gap-20 ">
-          <li className="flex flex-col items-center text-lg font-light">
-            <MdOutlineCameraAlt  className="text-4xl" />
-            Products
-          </li>
-          <li className="flex flex-col items-center text-lg font-light">
-            <LiaToolsSolid className="text-4xl" />
+    <Navbar className="fixed z-[1100] w-full">
+      <Container
+        style={{
+          borderRadius: "10px 10px 20px 20px",
+          backdropFilter: "blur(10px)",
+        }}
+        className="max-w-[1000px] mx-auto flex justify-between mt-[1.25rem] bg-[#1a19198f] border-2 border-[#f1f1f193]"
+      >
+        <Nav className="mx-auto w-[90%] h-[90px] flex items-center justify-center text-[#ffffffac] text-lg gap-32">
+          {/* page links */}
+          <a className={`${link} text-center`} href="#">
+            <IoCameraOutline className={linkIcon} />
+            Cameras
+          </a>
+          {/* routes links */}
+          <a className={link} href="#">
+            <AiOutlineStar className={linkIcon} />
             Accessories
-          </li>
-          <li className="flex flex-col items-center text-lg font-light">
-            <CiSquareQuestion  className="text-4xl" />
+          </a>
+          <Link className={link} to="/">
+            <AiOutlineQuestion className={linkIcon} />
             About
-          </li>
-          <li className="flex flex-col items-center text-lg font-light">
-            <RiHome2Line className="text-4xl" />
+          </Link>
+          <Link className={link} to="/">
+            <HiOutlineHome className={linkIcon} />
             Home
-          </li>
-        </ul>
-        {/* SHOPPING CART */}
-        <div className="w-[33.3%] flex justify-end">
-          <button className="text-white text-4xl mr-12">
-            <FiShoppingCart />
-          </button>
-        </div>
+          </Link>
+          <Button>
+            <PiShoppingCartLight  className="mx-auto text-[2.8rem]" />
+          </Button>
+        </Nav>
       </Container>
     </Navbar>
   );
