@@ -7,7 +7,7 @@ function App() {
     <>
       <UseScrollToTop />
       <MainRoutes />
-      {/* <Footer /> */}
+      <Footer />
     </>
   );
 }

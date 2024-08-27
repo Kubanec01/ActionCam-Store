@@ -1,10 +1,24 @@
 import { CameraFeature } from "./CameraFeature";
 import { productsList } from "../../../../data/productsList";
 import style from "./cameraStore.module.css";
+import { createContext, useState } from "react";
 
-CameraFeature;
 
 export function CamerasStore() {
+
+  const [totalPrice, setTotalPrice] = useState<number>(0);
+
+  //  FUNCTIONS 
+  const mathRounding = (num: number) => {
+    return Math.round(num * 100) / 100
+  }
+
+  const addProduct = (price: number) => {
+    setTotalPrice(prevPrice => mathRounding(prevPrice + price))
+  }
+
+  console.log(totalPrice)
+
   return (
     <div
       id="cameras-store"
@@ -14,7 +28,9 @@ export function CamerasStore() {
       <div className="flex justify-center mt-[100px]">
         {productsList.map((p) => {
           return (
-            <div className="border-[3px] border-[#ffffff19] w-[500px] rounded-xl bg-[#1c1c1c2a]">
+            <div
+            key={p.id}
+            className="border-[3px] border-[#ffffff19] w-[500px] rounded-xl bg-[#1515152a]">
               {/* IMG */}
               <div className="w-full h-[310px] my-10">
                 <img
@@ -37,7 +53,9 @@ export function CamerasStore() {
                 <p
                   className={`${style.colorText} font-medium text-3xl`}
                 >{`$ ${p.price}`}</p>
-                <button className={`${style.button} text-[#ffffffe4] text-2xl`}>Add To Card</button>
+                <button
+                onClick={() => addProduct(p.price)}
+                className={`${style.button} text-[#ffffffe4] text-2xl`}>Add To Card</button>
               </div>
             </div>
           );

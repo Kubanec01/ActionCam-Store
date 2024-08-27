@@ -10,7 +10,6 @@ export function Products() {
   // STATES
   const [totalPrice, setTotalPrice] = useState<number>(0);
   const [product, setProduct] = useState<CartProducts[]>([]);
-  console.log(product);
 
   const addProduct = ({id, price}: ProductsInfo) => {
     setTotalPrice((prevPrice) => prevPrice + price);
