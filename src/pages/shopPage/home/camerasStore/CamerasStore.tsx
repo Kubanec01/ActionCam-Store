@@ -1,20 +1,11 @@
 import { CameraFeature } from "./CameraFeature";
 import { productsList } from "../../../../data/productsList";
 import style from "./cameraStore.module.css";
+import { useShoppingCart } from "../../../../components/context/ShoppingCartContext";
 // import { useState } from "react";
 
 export function CamerasStore() {
-  // const [totalPrice, setTotalPrice] = useState<number>(0);
-
-  //  FUNCTIONS
-  // const mathRounding = (num: number) => {
-  //   return Math.round(num * 100) / 100;
-  // };
-
-  // const addProduct = (price: number) => {
-  //   setTotalPrice((prevPrice) => mathRounding(prevPrice + price));
-  // };
-
+  const {increaseProductsCount} = useShoppingCart()
 
   return (
     <>
@@ -53,6 +44,7 @@ export function CamerasStore() {
                     className={`${style.colorText} font-medium text-3xl`}
                   >{`$ ${p.price}`}</p>
                   <button
+                  onClick={() => increaseProductsCount(p.id)}
                     className={`${style.button} text-[#ffffffe4] text-2xl`}
                   >
                     Add To Card

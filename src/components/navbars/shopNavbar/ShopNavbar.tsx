@@ -8,17 +8,16 @@ import { HiOutlineHome } from "react-icons/hi2";
 import { AiOutlineQuestion } from "react-icons/ai";
 import { PiShoppingCartLight } from "react-icons/pi";
 import { IoReturnUpBackOutline } from "react-icons/io5";
-import {  useState } from "react";
-
+import { useState } from "react";
 
 export function ShopNavbar() {
   // STYLES
   const link = `${style.link}`;
   const linkIcon = "mx-auto text-3xl";
 
-  const [isActive, setIsActive] = useState<boolean>(false)
+  const [isOpen, setIsOpen] = useState<boolean>(false);
 
-  const productsCount = 2
+  const productsCount = 2;
 
   return (
     <Navbar className="fixed z-[1100] w-full px-2">
@@ -27,7 +26,7 @@ export function ShopNavbar() {
           borderRadius: "10px 10px 20px 20px",
           backdropFilter: "blur(10px)",
         }}
-        className={`${isActive ? style.activeBar : style.inactiveBar}
+        className={`${isOpen ? style.openBar : style.closedBar}
          max-w-[1000px] mx-auto flex flex-col justify-between mt-[1.25rem] bg-[#1a19198f]
         border-2 border-[#f1f1f193] overflow-hidden`}
       >
@@ -50,13 +49,14 @@ export function ShopNavbar() {
           </Link>
           <div className="relative">
             <Button
-            onClick={() => setIsActive(prevState => !prevState)}
-            className={`${style.shoppingCartIcon}`}>
-              {isActive ? 
-            <IoReturnUpBackOutline   className="mx-auto text-[2.8rem]" />  
-            :
-            <PiShoppingCartLight className="mx-auto text-[2.8rem]" />
-            }
+              onClick={() => setIsOpen((prevState) => !prevState)}
+              className={`${style.shoppingCartIcon}`}
+            >
+              {isOpen ? (
+                <IoReturnUpBackOutline className="mx-auto text-[2.8rem]" />
+              ) : (
+                <PiShoppingCartLight className="mx-auto text-[2.8rem]" />
+              )}
             </Button>
             {productsCount > 0 ? (
               <span
@@ -70,18 +70,20 @@ export function ShopNavbar() {
             )}
           </div>
         </Nav>
-        {isActive ?
-        <div className="w-full h-[84%]">
-          <div className="h-[88%]"></div>
-          <div className="h-full flex justify-end">
-            <p className="text-white text-3xl mr-6 mt-5">
-              56
-            </p>
+        {isOpen ? (
+          <div className="w-full h-[84%]">
+            <div className="h-[88%] flex justify-normal border mx-4">
+              <ul className="border w-full overflow-y-scroll">
+                {/* nechapem tejto funkcionalite dojebanej */}
+              </ul>
+            </div>
+            <div className="h-full flex justify-end">
+              <p className="text-white text-3xl mr-6 mt-5">56</p>
+            </div>
           </div>
-        </div>
-        :
-        ""  
-      }
+        ) : (
+          ""
+        )}
       </Container>
     </Navbar>
   );

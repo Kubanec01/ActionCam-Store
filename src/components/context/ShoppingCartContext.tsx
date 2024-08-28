@@ -7,28 +7,83 @@ type ShoppingCartContext = {
   increaseProductsCount: (id: string) => void;
   decreaseProductsCount: (id: string) => void;
   removeProductFromCart: (id: string) => void;
+  cartProductsCount: number;
+  cartProducts: CartProduct[];
 };
-
-const ShoppingCartContext = createContext({} as ShoppingCartContext);
 
 type ShoppingCartProviderProps = {
   children: ReactNode;
 };
 
-type CartItem = {
+type CartProduct = {
   id: string;
   count: number;
 };
 
+const ShoppingCartContext = createContext({} as ShoppingCartContext);
+
 export function ShoppingCartProvider({ children }: ShoppingCartProviderProps) {
-  const [cartItems, setCartItems] = useState<CartItem[]>([]);
+  const [cartProducts, setCartProducts] = useState<CartProduct[]>([]);
+  console.log(cartProducts);
 
   const getProductCount = (id: string) => {
-    cartItems.find((item) => item.id === id)?.count || 0;
+    cartProducts.find((p) => p.id === id)?.count || 0;
   };
 
+  const increaseProductsCount = (id: string) => {
+    setCartProducts((currProducts) => {
+      if (currProducts.find((p) => p.id === id) == null) {
+        return [...currProducts, { id, count: 1 }];
+      } else {
+        return currProducts.map((p) => {
+          if (p.id === id) {
+            return { ...p, count: p.count + 1 };
+          } else {
+            return p;
+          }
+        });
+      }
+    });
+  };
+
+  const decreaseProductsCount = (id: string) => {
+    setCartProducts((currProducts) => {
+      if (currProducts.find((p) => p.id === id)?.count === 1) {
+        return currProducts.filter((p) => p.id !== id);
+      } else {
+        return currProducts.map((p) => {
+          if (p.id === id) {
+            return { ...p, count: p.count - 1 };
+          } else {
+            return p;
+          }
+        });
+      }
+    });
+  };
+
+  const removeProductFromCart = (id: string) => {
+    setCartProducts((currProducts) => {
+      return currProducts.filter((p) => p.id !== id);
+    });
+  };
+
+  const cartProductsCount = cartProducts.reduce(
+    (count, product) => product.count + count,
+    0
+  );
+
   return (
-    <ShoppingCartContext.Provider value={{}}>
+    <ShoppingCartContext.Provider
+      value={{
+        getProductCount,
+        increaseProductsCount,
+        decreaseProductsCount,
+        removeProductFromCart,
+        cartProductsCount,
+        cartProducts
+      }}
+    >
       {children}
     </ShoppingCartContext.Provider>
   );

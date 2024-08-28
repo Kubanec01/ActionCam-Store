@@ -16,12 +16,12 @@
     color: white;
 }
 
-.activeBar {
+.openBar {
     height: 800px;
     transition: all 0.5s ease;
 }
 
-.inactiveBar {
+.closedBar {
     height: 90px;
     transition: all 0.2s ease;
 }
