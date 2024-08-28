@@ -8,7 +8,8 @@ import { HiOutlineHome } from "react-icons/hi2";
 import { AiOutlineQuestion } from "react-icons/ai";
 import { PiShoppingCartLight } from "react-icons/pi";
 import { IoReturnUpBackOutline } from "react-icons/io5";
-import { useState } from "react";
+import {  useState } from "react";
+
 
 export function ShopNavbar() {
   // STYLES
@@ -17,8 +18,7 @@ export function ShopNavbar() {
 
   const [isActive, setIsActive] = useState<boolean>(false)
 
-
-  const productsCount = 0;
+  const productsCount = 2
 
   return (
     <Navbar className="fixed z-[1100] w-full px-2">
@@ -75,7 +75,7 @@ export function ShopNavbar() {
           <div className="h-[88%]"></div>
           <div className="h-full flex justify-end">
             <p className="text-white text-3xl mr-6 mt-5">
-              $56
+              56
             </p>
           </div>
         </div>
