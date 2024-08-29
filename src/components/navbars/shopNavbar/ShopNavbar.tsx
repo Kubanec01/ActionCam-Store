@@ -9,15 +9,21 @@ import { AiOutlineQuestion } from "react-icons/ai";
 import { PiShoppingCartLight } from "react-icons/pi";
 import { IoReturnUpBackOutline } from "react-icons/io5";
 import { useState } from "react";
+import { useShoppingCart } from "../../context/ShoppingCartContext";
+import { CartItem } from "./CartItem";
+
+
 
 export function ShopNavbar() {
   // STYLES
   const link = `${style.link}`;
   const linkIcon = "mx-auto text-3xl";
 
+  const {cartProductsCount, cartProducts} = useShoppingCart()
+
   const [isOpen, setIsOpen] = useState<boolean>(false);
 
-  const productsCount = 2;
+  const productsCount = cartProductsCount;
 
   return (
     <Navbar className="fixed z-[1100] w-full px-2">
@@ -72,9 +78,13 @@ export function ShopNavbar() {
         </Nav>
         {isOpen ? (
           <div className="w-full h-[84%]">
-            <div className="h-[88%] flex justify-normal border mx-4">
-              <ul className="border w-full overflow-y-scroll">
-                {/* nechapem tejto funkcionalite dojebanej */}
+            <div className="h-[88%] flex justify-normal mx-4">
+              <ul className={`${style.shoppingCartList} w-full h-full overflow-y-scroll pr-2`}>
+                  {cartProducts.map(p => {
+                    return (
+                      <CartItem key={p.id} {...p}  />
+                    )
+                  })}
               </ul>
             </div>
             <div className="h-full flex justify-end">

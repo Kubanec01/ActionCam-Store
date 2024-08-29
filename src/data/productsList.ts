@@ -1,6 +1,5 @@
 import { AllProducts } from "../types";
 import gopro12Img from "../assets/gopro-12-img.png";
-import gopro11Img from "../assets/gopro11-about-img.png";
 
 export const productsList: AllProducts[] = [
   {
