@@ -11,19 +11,25 @@ import { IoReturnUpBackOutline } from "react-icons/io5";
 import { useState } from "react";
 import { useShoppingCart } from "../../context/ShoppingCartContext";
 import { CartItem } from "./CartItem";
-
-
+import { productsList } from "../../../data/productsList";
+import emptyCartImg from "../../../assets/empty-cart-img.png"
 
 export function ShopNavbar() {
   // STYLES
   const link = `${style.link}`;
   const linkIcon = "mx-auto text-3xl";
 
-  const {cartProductsCount, cartProducts} = useShoppingCart()
+  const { cartProductsCount, cartProducts } = useShoppingCart();
 
   const [isOpen, setIsOpen] = useState<boolean>(false);
 
   const productsCount = cartProductsCount;
+
+  const priceCalc = cartProducts.reduce((total, currProduct) => {
+    const product = productsList.find((p) => p.id === currProduct.id);
+    return total + (product?.price || 0) * currProduct.count;
+  }, 0);
+  const totalPrice = Math.round((priceCalc * 100)) / 100;
 
   return (
     <Navbar className="fixed z-[1100] w-full px-2">
@@ -79,16 +85,24 @@ export function ShopNavbar() {
         {isOpen ? (
           <div className="w-full h-[84%]">
             <div className="h-[88%] flex justify-normal mx-4">
-              <ul className={`${style.shoppingCartList} w-full h-full overflow-y-scroll pr-2`}>
-                  {cartProducts.map(p => {
-                    return (
-                      <CartItem key={p.id} {...p}  />
-                    )
-                  })}
+              <ul
+                className={`${style.shoppingCartList} w-full h-full overflow-y-scroll pr-2`}
+              >
+                {productsCount > 0 ? 
+                cartProducts.map((p) => {
+                  return <CartItem key={p.id} {...p} />;
+                })
+                :
+                <div className="w-[60%] h-[80%] mx-auto">
+                <img
+                className="opacity-[0.095] w-full h-full object-cover"
+                src={emptyCartImg} alt="empty-cart-img" />
+              </div>
+              }
               </ul>
             </div>
             <div className="h-full flex justify-end">
-              <p className="text-white text-3xl mr-6 mt-5">56</p>
+              <p className="text-white text-3xl mr-6 mt-5">{`$${totalPrice}`}</p>
             </div>
           </div>
         ) : (

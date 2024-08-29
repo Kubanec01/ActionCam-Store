@@ -72,6 +72,7 @@ export function ShoppingCartProvider({ children }: ShoppingCartProviderProps) {
     (count, product) => product.count + count,
     0
   );
+  
 
   return (
     <ShoppingCartContext.Provider
