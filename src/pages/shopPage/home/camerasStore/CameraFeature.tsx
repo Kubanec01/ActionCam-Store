@@ -3,7 +3,7 @@ import Spline from "@splinetool/react-spline";
 
 export function CameraFeature () {
     return (
-        <div className="flex justify-between max-w-[1300px] mx-auto mt-10">
+        <div className="flex justify-between max-w-[1300px] mx-auto mt-10 p-2">
         <div className="w-[50%]">
           <h1 className="text-7xl text-[#d0d0d05e] mt-[110px]">Nocturnal <span className="text-[#ffffffbe]">Brilliance</span></h1>
           <p className="text-2xl text-[#ffffff9e] mt-[80px] w-[85%]">

@@ -52,7 +52,7 @@ export function ProductBars() {
   };
 
   return (
-    <div>
+    <div className="p-3 overflow-hidden mb-[150px]">
       {/* CAMERAS SECTION */}
       <div className="mx-auto max-w-[1300px] mt-[120px]">
         <motion.h1

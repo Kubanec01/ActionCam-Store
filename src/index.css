@@ -1,6 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Anek+Devanagari:wght@100..800&family=Oswald:wght@200..700&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&family=Sankofa+Display&display=swap");
 
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -12,7 +11,7 @@
 }
 
 body {
-  background-color: #0e0e0e;
+  background-color: #0b0b0b;
   margin: 0;
   padding: 0;
   font-family: "Roboto Condensed", sans-serif;
