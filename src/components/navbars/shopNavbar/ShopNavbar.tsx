@@ -72,7 +72,7 @@ export function ShopNavbar() {
             </Button>
             {productsCount > 0 ? (
               <span
-                className="absolute bg-[#e12d2d] text-white border-2 border-[#1a1919] rounded-[100%] w-[26px] h-[26px] 
+                className="absolute bg-[#5b29d0] text-white border-2 border-[#1a1919] rounded-[100%] w-[26px] h-[26px] 
            text-sm top-0 -right-2 flex justify-center items-center font-medium"
               >
                 {productsCount < 100 ? productsCount : "99+"}
@@ -95,7 +95,7 @@ export function ShopNavbar() {
                 :
                 <div className="w-[60%] h-[80%] mx-auto">
                 <img
-                className="opacity-[0.095] w-full h-full object-cover"
+                className="opacity-[0.09] w-full h-full object-cover"
                 src={emptyCartImg} alt="empty-cart-img" />
               </div>
               }

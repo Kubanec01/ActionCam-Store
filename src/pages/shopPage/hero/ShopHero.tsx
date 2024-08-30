@@ -7,7 +7,7 @@ export function ShopHero() {
       {/* text */}
       <div className="max-w-[1900px] mx-auto h-[220px] flex items-center">
         <h1
-          className={`${style.title} text-[#b9b8b893] text-8xl ml-12 font-normal opacity-90`}
+          className={`${style.title} text-[#ffffffac] text-8xl ml-12 font-normal opacity-90`}
         >
           Capture Anything,
           <span className={style.colorText}> Anywhere</span>.
