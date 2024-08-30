@@ -23,7 +23,7 @@ export function CartItem({ id, count }: CartItemProps) {
   return (
     <li className="w-full h-[100px] flex border-2 border-[#ffffff1e] bg-[#1a1a1aa2] overflow-hidden rounded-2xl mb-4">
       {/* LEFT */}
-      <div className="flex h-full w-[40%]">
+      <div className="flex h-full w-[40%] p-1">
         <img
           className="object-contain mx-auto max-w-full h-auto"
           src={data?.image}

@@ -84,7 +84,7 @@ export function ShopNavbar() {
         </Nav>
         {isOpen ? (
           <div className="w-full h-[84%]">
-            <div className="h-[88%] flex justify-normal mx-4">
+            <div className="h-[88%] flex justify-normal mx-4 ">
               <ul
                 className={`${style.shoppingCartList} w-full h-full overflow-y-scroll pr-2`}
               >

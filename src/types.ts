@@ -24,5 +24,6 @@ export type AllProducts = {
   name: string;
   desc: string;
   price: number;
+  type: string;
 };
 // ----------------
