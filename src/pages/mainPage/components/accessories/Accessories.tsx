@@ -5,23 +5,24 @@ import image4 from "../../../../assets/camera-light-img.png";
 import sparkImg from "../../../../assets/spark-img.png";
 import style from "./accessories.module.css";
 import { motion } from "framer-motion";
-import { useTranslation } from "react-i18next";
+import { Trans, useTranslation } from "react-i18next";
 
 export function Accessories() {
   const { t } = useTranslation();
   return (
     <div className="mt-[140px] w-full">
       {/* VIDEO */}
-      <div
-        className="w-full h-[50rem] relative flex justify-center items-center"
-      >
+      <div className="w-full h-[50rem] relative flex justify-center items-center">
         <video
           autoPlay
           loop
           muted
           className="absolute right-0 bottom-0 w-full h-full object-cover z-10"
         >
-          <source src="https://res.cloudinary.com/dcta0x1vy/video/upload/v1724600264/7454923-hd_1920_1080_25fps_zm1w3u.mp4" type="video/mp4" />
+          <source
+            src="https://res.cloudinary.com/dcta0x1vy/video/upload/v1724600264/7454923-hd_1920_1080_25fps_zm1w3u.mp4"
+            type="video/mp4"
+          />
         </video>
         <div
           className={`${style.textGradient} w-full h-full z-50 flex flex-col justify-end`}
@@ -30,25 +31,28 @@ export function Accessories() {
             <h2
               className={`${style.imageTitle} text-[#ffffff] text-6xl w-[37.5rem]`}
             >
-              More is More
+              {t("home.videoAccessoryDescTitle")}
             </h2>
             <p className="text-[#ffffffa1] text-3xl font-medium w-[37.5rem] mb-[8.125rem]">
-              With <span className="text-white">accessories</span> for every
-              sport, you will find the right one for you. From simple lights,
-              through microphones to stabilizers, you will be able to push your
-              limits for a better <span className="text-white">experience</span>
-              .
+              <Trans
+                i18nKey="home.videoAccessoryDescDesc"
+                components={{
+                  1: <span className="text-white" />,
+                  2: <span className="text-white" />,
+                }}
+              />
             </p>
           </div>
         </div>
       </div>
       {/* HEAD CAMERA CONTAINER */}
       <div
-      id="accessories"
-      style={{
-        scrollMarginTop: '220px'
-      }}
-      className="w-full flex justify-between max-w-[1500px] mx-auto mt-[9.375rem] p-4">
+        id="accessories"
+        style={{
+          scrollMarginTop: "13.75rem",
+        }}
+        className="w-full flex justify-between max-w-[1500px] mx-auto mt-[9.375rem] p-4"
+      >
         {/* TEXT */}
         <div className="w-[70%]">
           <div className="flex flex-col items-start w-[50%] mt-3 ml-[50%] p-2">
@@ -67,9 +71,9 @@ export function Accessories() {
               className="text-[#fffffff7] relative text-6xl mb-[1.25rem] before:w-[28.125rem] before:h-[0.125rem] before:absolute before:rounded-xl before:bg-[#ffffff4c]
             before:-top-8 before:-left-[12.5rem]"
             >
-              Deal, on <br />
-              the perfect <br />
-              adventure gear.
+              <Trans
+              i18nKey={"home.headAccessoryTitle1"}
+              />
             </motion.h2>
             <motion.p
               initial="hidden"
@@ -123,8 +127,12 @@ export function Accessories() {
           <div className=" w-[70%] flex flex-row justify-between max-w-[1300px]">
             <div className="w-[50%] ml-[3.125rem] flex flex-col justify-center">
               <h2 className="text-7xl font-bold text-[#0000004c] w-[80%] mt-[1.25rem]">
-                <span className="text-[#ff6200f6]">Life Jacket</span> For <br />
-                Every Situation
+                  <Trans
+                  i18nKey={"home.lifeJacketTitle"}
+                  components={{
+                    1: <span className="text-[#ff6200f6]" />
+                  }}
+                  />
               </h2>
               <p className="text-xl text-[#1a1a1af0] font-medium w-[80%] mt-[1.25rem]">
                 {t("home.lifeJacketDesc")}

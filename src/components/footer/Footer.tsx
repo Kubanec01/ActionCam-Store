@@ -10,7 +10,7 @@ import { useTranslation } from "react-i18next";
 export function Footer() {
   const {t} = useTranslation()
   return (
-    <div className="bg-[#101010] w-full p-4">
+    <div className="bg-[#0a0a0a] w-full p-4 mt-[1.25rem]">
       <div className=" my-[3.125rem] w-[60%] max-w-[1200px] mx-auto flex justify-center">
         {/* LEFT */}
         <div>
@@ -55,7 +55,7 @@ export function Footer() {
             className={`${style.button} border-2 border-[#ffffff56] text-[#ffffff99] flex justify-center items-center w-[12.5rem] h-[3.125rem]`}
           >
             <FaSquarePhone className="text-2xl mr-2 text-[#244ad5]" />
-            <a href="tel:0903871518">0903 871 518</a>
+            <a href="tel:+421903871518">+421 903 871 518</a>
           </button>
           <button
             style={{

@@ -12,7 +12,7 @@ export function Home() {
   const { t } = useTranslation();
 
   return (
-    <div className="mt-14 flex justify-center flex-col items-center">
+    <div className="mt-14 flex justify-center flex-col items-center p-2">
       <div className="h-[43.75rem] w-[90%] max-w-[1500px] flex justify-between">
         {/* IMAGE 1 */}
         <motion.div

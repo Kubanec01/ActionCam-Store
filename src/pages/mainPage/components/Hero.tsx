@@ -1,9 +1,8 @@
-import style from "./hero.module.css";
 
 export function Hero() {
   return (
     <div
-      className={`${style.container} h-[56.25rem] flex justify-center items-center relative`}
+      className="h-[56.25rem] flex justify-center items-center relative"
     >
       <video
         autoPlay
@@ -18,7 +17,10 @@ export function Hero() {
       </video>
       {/* TEXT CONTAINER */}
       <div
-        className={`${style.textGradient} w-full h-full flex justify-center items-end z-50`}
+        style={{
+          background: "linear-gradient(to top, #0b0b0b 10%, transparent)",
+        }}
+        className="w-full h-full flex justify-center items-end z-50"
       >
         {/* TEXT BODY */}
         <div className=" flex flex-col items-center justify-center text-center mb-[4.375rem]">

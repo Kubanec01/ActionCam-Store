@@ -16,10 +16,17 @@ const resources = {
           "Get incredible HERO11 Black video performance in a smaller, lighter, simpler design. HERO11 Black Mini’s smaller size makes it more comfortable to wear when capturing point-of-view footage, and dual mounting fingers boost your body and helmet mounting options.",
         experiencesDesc2:
           "Yes, Yes and Yes! A tough outer shell takes legendary GoPro durability to a whole new level. It features the same large image sensor that lets you share vertical shots to social media with ease, and you’ll get incredible highlight videos sent to your phone automatically.",
-        headAccessoryDesc1:
+        videoAccessoryDescTitle: "More is More",
+        videoAccessoryDescDesc:
+          "With <1>accessories</1> for every sport, you will find the right one for you. From simple lights, through microphones to stabilizers, you will be able to push your limits for a better <2>experience</2>.",
+          headAccessoryTitle1:
+          "Deal, on <br />the perfect <br />adventure gear.",
+          headAccessoryDesc1:
           "Gear up with must-have mounts for hiking, snorkeling and more. This kit features The Head Strap 2.0, perfect for immersive point-of-view shots.",
-        lifeJacketDesc:
-          "Keep your camera afloat and never worry about losing it with Floaty for Gopro. The high-visibility orange color is easy to spot in the water, while the wraparound design provides easy access to buttons and mounting fingers. Floaty is perfect for snorkeling, surfing, wakeboarding or just splashing around at the beach.",
+          lifeJacketTitle:
+          "<1>Life Jacket</1> For <br/> Every Situation.",
+          lifeJacketDesc:
+          "Keep your camera afloat and never worry about losing it with Floaty for GoPro. The high-visibility orange color is easy to spot in the water, while the wraparound design provides easy access to buttons and mounting fingers. Floaty is perfect for snorkeling, surfing, wakeboarding or just splashing around at the beach.",
         lifeJacketButton: "See More",
         ledTitle: "Compact, Powerful, LED",
         ledDesc:
@@ -27,7 +34,9 @@ const resources = {
         appTitle: "Capture, Edit, Share",
         appDesc:
           "Transform your adventures into cinematic masterpieces with GoPro Editor App. Seamlessly cut, trim, and stitch your footage with our intuitive interface, designed to make video editing as easy as tapping a few buttons. Enhance your clips using professional tools such as slow motion, time-lapse, and stunning effects, bringing out the best in every moment.",
-        newProductDesc:
+          newProductTitle:
+          "New year with a new <br/> <1>experience</1>",
+          newProductDesc:
           "Get ready to capture the world like never before with our groundbreaking camera, arriving September 2024. Whether you're a seasoned professional or an aspiring creator, this is the tool that will redefine your storytelling.",
         newProductProps: {
           1: "GP3 Software",

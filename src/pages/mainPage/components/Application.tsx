@@ -30,7 +30,7 @@ export function Application() {
               hidden: { opacity: 0, x: -100 },
               visible: { opacity: 1, x: 0 },
             }}
-            className="text-4xl w-full mb-[10px] text-white relative
+            className="text-4xl w-full mb-[0.625rem] text-white relative
           before:bg-[#ffffff8a] before:w-[30%] before:h-[0.125rem] before:absolute before:-top-8 before:left-0 before:rounded-xl"
           >
             {t("home.appTitle")}
@@ -67,7 +67,7 @@ export function Application() {
               }}
               className="object-cover w-[40%] opacity-90"
               src={image3}
-              alt=""
+              alt="app-platforms-img"
             />
           </div>
         </div>

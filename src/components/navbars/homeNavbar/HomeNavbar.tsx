@@ -12,7 +12,7 @@ export function HomeNavbar() {
   const [isAtTop, setIsAtTop] = useState(true);
 
   useEffect(() => {
-    const handleScroll = () => {
+    const scrollStatus = () => {
       if (window.scrollY === 0) {
         setIsAtTop(true);
       } else {
@@ -20,10 +20,10 @@ export function HomeNavbar() {
       }
     };
 
-    window.addEventListener("scroll", handleScroll);
+    window.addEventListener("scroll", scrollStatus);
 
     return () => {
-      window.removeEventListener("scroll", handleScroll);
+      window.removeEventListener("scroll", scrollStatus);
     };
   });
 

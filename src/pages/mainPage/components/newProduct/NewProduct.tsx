@@ -6,7 +6,7 @@ import { LiaFeatherAltSolid } from "react-icons/lia";
 import { LuBatteryFull } from "react-icons/lu";
 import image1 from "../../../../assets/gopro13-img.png";
 import { motion } from "framer-motion";
-import { useTranslation } from "react-i18next";
+import { Trans, useTranslation } from "react-i18next";
 
 export function NewProduct() {
   const {t} = useTranslation()
@@ -23,9 +23,9 @@ export function NewProduct() {
         backgroundSize: "cover",
         scrollMarginTop: "100px",
       }}
-      className="w-full mt-[200px] mb-[20px] p-4"
+      className="w-full mt-[12.5rem] mb-[20px] p-4"
     >
-      <div className="max-w-[1200px] mx-auto my-[40px] relative">
+      <div className="max-w-[1200px] mx-auto my-[2.5rem] relative">
         <motion.img
           initial="hidden"
           whileInView="visible"
@@ -38,13 +38,17 @@ export function NewProduct() {
             hidden: { opacity: 0, x: 100 },
             visible: { opacity: 1, x: 0 },
           }}
-          className="object-cover absolute -right-[80px] top-[130px] w-[580px]"
+          className="object-cover absolute -right-[5rem] top-[8.125rem] w-[580px]"
           src={image1}
           alt="gopro-13-img"
         />
         <h2 className="text-[#fffffff9] w-[100%] font-bold text-[9rem] leading-none">
-          New year with a new <br />
-          <span className={`${style.coloredTitle}`}>experience</span>
+          <Trans
+          i18nKey={"home.newProductTitle"}
+          components={{
+            1: <span className={`${style.coloredTitle}`} />
+          }}
+          />
         </h2>
         <p className="text-[#ffffffb3] text-[1.3rem] leading-[1.6rem] w-[50%] mt-[40px]">
           {t('home.newProductDesc')}

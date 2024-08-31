@@ -1,5 +1,5 @@
-import { Hero } from "./hero/Hero";
-import { Home } from "./home/Home";
+import { Hero } from "./components/Hero";
+import { Home } from "./components/Home";
 import { HomeNavbar } from "../../components/navbars/homeNavbar/HomeNavbar";
 
 export function MainPage() {
