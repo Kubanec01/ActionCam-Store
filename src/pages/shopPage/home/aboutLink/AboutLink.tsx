@@ -24,7 +24,7 @@ export function AboutLink() {
           <span className="text-[#ffffffea]">about</span> the camera?
         </motion.h1>
       </div>
-      <div className="text-[#ffffff] w-full flex justify-center mt-[300px]">
+      <div className="text-[#ffffff] w-full flex justify-center mt-[250px]">
     <Link
         to="/about"
         className={`${style.button} text-2xl font-[400] w-[180px] h-[40px] bg-[#53407f] rounded-2xl flex justify-center items-center`}

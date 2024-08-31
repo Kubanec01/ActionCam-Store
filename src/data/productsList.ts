@@ -8,6 +8,7 @@ import accessoryImg2 from "../assets/gopro-lige-jacket-img.png";
 import accessoryImg3 from "../assets/camera-light-img.png";
 import accessoryImg4 from "../assets/extension-pole-img.png";
 import accessoryImg5 from "../assets/volta-img.png";
+import accessoryImg6 from "../assets/fetch-dog-img.png";
 
 export const productsList: AllProducts[] = [
   {
@@ -82,42 +83,12 @@ export const productsList: AllProducts[] = [
     price: 89.99,
     type: "accessory",
   },
+  {
+    id: "fetch-dog-harness",
+    image: accessoryImg6,
+    name: "Fetch Dog Harness",
+    desc: "Capture the world from your dog’s point of view. This harness features camera mounts on the back + chest for a variety of perspectives—from bone-chewing, digging and front-paw action, to over-the-head shots of playing, running, fetch + more. Soft, padded construction keeps your pet comfortable. Fully adjustable to fit dogs from 20 to 120 lbs (9 to 54kg).",
+    price: 49.99,
+    type: "accessory-complement",
+  },
 ];
-
-// export const accessoriesList: AllProducts[] = [
-//   {
-//     id: "headStrap",
-//     image: accessoryImg1,
-//     name: "Head Strap 2.0",
-//     desc: "Head Strap 2.0 offers three setups: use the headband with the top strap for stability, the headband alone for a low-profile look, or the removable clip for versatile mounting on caps, belts, and more. The main headband also enables mounting on stationary objects.",
-//     price: 24.99,
-//   },
-//   {
-//     id: "lifeJacket",
-//     image: accessoryImg2,
-//     name: "Floaty",
-//     desc: "This easy-to-spot accessory keeps your HERO camera afloat and adds protective padding. The wraparound design allows access to your camera buttons, front LCD screen, back touch screen, and folding fingers for easy mounting. Floaty also includes a tether point for added security.",
-//     price: 29.99,
-//   },
-//   {
-//     id: "lightMod",
-//     image: accessoryImg3,
-//     name: "Light Mod",
-//     desc: "Add compact yet powerful LED lighting to your next adventure. With Light Mod, you can illuminate your subject with wide, smooth, even light and capture ultra crisp footage. Light Mod attaches to HERO cameras via Media Mod (sold separately), or works as a handy standalone light for use with GoPro mounts.",
-//     price: 49.99,
-//   },
-//   {
-//     id: "extensionPole",
-//     image: accessoryImg4,
-//     name: "Extension Pole",
-//     desc: "This extension pole stretches to 48in (122cm) and collapses to 10in (25cm), featuring a detachable wireless remote for easy photo-taking and recording. Made of durable, lightweight aluminum, it's waterproof for capturing activities in any condition.",
-//     price: 89.99,
-//   },
-//   {
-//     id: "volta",
-//     image: accessoryImg5,
-//     name: "Extension Pole",
-//     desc: "This extension pole stretches to 48in (122cm) and collapses to 10in (25cm), featuring a detachable wireless remote for easy photo-taking and recording. Made of durable, lightweight aluminum, it's waterproof for capturing activities in any condition.",
-//     price: 89.99,
-//   },
-// ];

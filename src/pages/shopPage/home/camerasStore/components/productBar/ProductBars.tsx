@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
-import { useShoppingCart } from "../../../../../components/context/ShoppingCartContext";
-import { productsList } from "../../../../../data/productsList";
+import { useShoppingCart } from "../../../../../../context/ShoppingCartContext";
+import { productsList } from "../../../../../../data/productsList";
 import style from "./productBar.module.css";
 
 

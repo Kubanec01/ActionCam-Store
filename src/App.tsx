@@ -1,7 +1,7 @@
 import { MainRoutes } from "./routes/MainRoutes";
 import { UseScrollToTop } from "./hooks/useScrollToTop";
 import { Footer } from "./components/footer/Footer";
-import { ShoppingCartProvider } from "./components/context/ShoppingCartContext";
+import { ShoppingCartProvider } from "./context/ShoppingCartContext";
 
 function App() {
   return (

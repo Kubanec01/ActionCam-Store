@@ -1,5 +1,5 @@
 import { productsList } from "../../../data/productsList";
-import { useShoppingCart } from "../../context/ShoppingCartContext";
+import { useShoppingCart } from "../../../context/ShoppingCartContext";
 import { HiOutlineTrash } from "react-icons/hi2";
 
 type CartItemProps = {

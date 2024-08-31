@@ -22,7 +22,7 @@ export function GlobalSales() {
             >
               Over 3 million sales for 2023
             </h1>
-            <div className="mt-[30px] mb-[120px]">
+            <div className="mt-[40px] mb-[120px]">
               <button
               style={{
                 borderRadius: "10px 3px"

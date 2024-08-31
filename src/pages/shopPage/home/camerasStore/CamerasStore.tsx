@@ -1,5 +1,6 @@
-import { CameraFeature } from "./CameraFeature";
-import { ProductBars } from "./productBar/ProductBars";
+import { AccessoryComplement } from "./components/accessoryComplement/AccessoryComplement";
+import { CameraFeature } from "./components/CameraFeature";
+import { ProductBars } from "./components/productBar/ProductBars";
 // import { useState } from "react";
 
 export function CamerasStore() {
@@ -12,6 +13,9 @@ export function CamerasStore() {
       >
         <CameraFeature />
         <ProductBars />
+      </div>
+      <div>
+        <AccessoryComplement />
       </div>
     </>
   );

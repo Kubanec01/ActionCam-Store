@@ -9,7 +9,7 @@ import { AiOutlineQuestion } from "react-icons/ai";
 import { PiShoppingCartLight } from "react-icons/pi";
 import { IoReturnUpBackOutline } from "react-icons/io5";
 import { useState } from "react";
-import { useShoppingCart } from "../../context/ShoppingCartContext";
+import { useShoppingCart } from "../../../context/ShoppingCartContext";
 import { CartItem } from "./CartItem";
 import { productsList } from "../../../data/productsList";
 import emptyCartImg from "../../../assets/empty-cart-img.png"
