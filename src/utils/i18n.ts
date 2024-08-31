@@ -50,6 +50,17 @@ const resources = {
         footerQuote:
           '"Adventure is not in the destination, but in the moments you dare to capture."',
       },
+      navbar: {
+        accessories: "Accessories",
+        application: "Application",
+        upcoming: "Upcoming",
+        shop: "Shop",
+        about: "About",
+        contactUs: "Contact Us",
+        ourStory: "Our Story",
+        home: "Home",
+        cameras: "Cameras",
+      },
       about: {
         homeTitle: "Conquer Heights and Depths",
         homeDesc:
@@ -74,8 +85,10 @@ const resources = {
           title: "From Extremes to Everyday",
           desc: "GoPro started as the ultimate camera for extreme sports. Over time, it’s evolved to capture every sport and adventure, bringing professional-quality video to all.",
         },
+        cameraTitle: "For Every <1>Moment</1>",
         cameraDesc:
           "GoPro's are undeniably great for recording sport; whether it be skiing, running, skateboarding, climbing or mountain-biking, GoPros can be used to create amazing Point Of View videos as well as help you to record and make a note of your technique when carrying out your routines. Although GoPros were originally introduced as mountable action cameras, their size and video quality make them good travel cameras as well. In terms of durability, they are waterproof (as in you can record under water at shallow depths) and much tougher than a phone or camera.",
+        videoButton: "See More",
       },
     },
   },

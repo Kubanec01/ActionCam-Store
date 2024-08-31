@@ -4,8 +4,11 @@ import Navbar from "react-bootstrap/Navbar";
 import { Link } from "react-router-dom";
 import { useEffect, useState } from "react";
 import style from "./homeNavbar.module.css";
+import { useTranslation } from "react-i18next";
 
 export function HomeNavbar() {
+  const {t} = useTranslation()
+
   // STYLES
   const link = `${style.link}`;
 
@@ -36,15 +39,15 @@ export function HomeNavbar() {
           </Navbar.Brand>
           <Nav className="flex justify-center items-center max-w-[400px] mr-[2.5rem] gap-16">
             <Link to="shop" className="text-[#ffffffdc] text-2xl">
-              Shop
+              {t('navbar.shop')}
             </Link>
             <Link to="about" className="w text-[#ffffffdc] text-2xl">
-              About
+              {t('navbar.about')}
             </Link>
             <button
             onClick={() => {window.location.href = "mailto: jakub.z.roman@gmail.com"}}
             className="border-2 rounded-2xl w-[8.75rem] h-[3.125rem] text-white  text-2xl">
-              Contact Us
+              {t("navbar.contactUs")}
             </button>
           </Nav>
         </Container>
@@ -59,19 +62,23 @@ export function HomeNavbar() {
           <Nav className="mx-auto w-[90%] flex items-center justify-center text-[#ffffffac] text-lg gap-20">
             {/* page links */}
             <a className={link} href="#accessories">
-              Accessories
+              {t("navbar.accessories")}
             </a>
             <a className={link} href="#application">
-              Application
+              {t('navbar.application')}
             </a>
             <a className={link} href="#new-product">
-              Upcoming
+            {t('navbar.upcoming')}
             </a>
             {/* routes links */}
-            <Link className={link} to="shop" >Shop</Link>
-            <Link className={link} to="about" >About</Link>
+            <Link className={link} to="shop" >
+            {t('navbar.shop')}
+            </Link>
+            <Link className={link} to="about" >
+            {t('navbar.about')}
+            </Link>
             <a className={link} href="mailto:jakub.z.roman@gmail.com">
-              Contact US
+            {t('navbar.contactUs')}
             </a>
           </Nav>
         </Container>

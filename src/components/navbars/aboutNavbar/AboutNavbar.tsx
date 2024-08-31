@@ -4,15 +4,19 @@ import Navbar from "react-bootstrap/Navbar";
 import { Link } from "react-router-dom";
 import { useEffect, useState } from "react";
 import style from "./aboutNavbar.module.css";
+import { useTranslation } from "react-i18next";
 
 export function AboutNavbar() {
+
+  const {t} = useTranslation()
+
   // STYLES
   const link = `${style.link}`;
 
   const [isAtTop, setIsAtTop] = useState(true);
 
   useEffect(() => {
-    const handleScroll = () => {
+    const scrollStatus = () => {
       if (window.scrollY === 0) {
         setIsAtTop(true);
       } else {
@@ -20,10 +24,10 @@ export function AboutNavbar() {
       }
     };
 
-    window.addEventListener("scroll", handleScroll);
+    window.addEventListener("scroll", scrollStatus);
 
     return () => {
-      window.removeEventListener("scroll", handleScroll);
+      window.removeEventListener("scroll", scrollStatus);
     };
   });
 
@@ -36,15 +40,15 @@ export function AboutNavbar() {
           </Navbar.Brand>
           <Nav className="flex justify-center items-center max-w-[400px] mr-[2.5rem] gap-16">
             <Link to="/shop" className="text-[#ffffffdc] text-2xl">
-              Shop
+              {t('navbar.shop')}
             </Link>
             <Link to="/" className="w text-[#ffffffdc] text-2xl">
-              Home
+              {t('navbar.home')}
             </Link>
             <button
             onClick={() => {window.location.href = "mailto: jakub.z.roman@gmail.com"}}
             className="border-2 rounded-2xl w-[8.75rem] h-[3.125rem] text-white  text-2xl">
-              Contact Us
+              {t('navbar.contactUs')}
             </button>
           </Nav>
         </Container>
@@ -59,17 +63,17 @@ export function AboutNavbar() {
           <Nav className="mx-auto w-[90%] flex items-center justify-center text-[#ffffffac] text-xl gap-36">
             {/* page links */}
             <a className={link} href="#camera-overview">
-              Our Story
+            {t('navbar.ourStory')}
             </a>
             {/* routes links */}
             <Link className={link} to="/shop">
-              Shop
+            {t('navbar.shop')}
             </Link>
             <Link className={link} to="/">
-              Home
+              {t('navbar.home')}
             </Link>
             <a className={link} href="mailto:jakub.z.roman@gmail.com">
-              Contact US
+            {t('navbar.contactUs')}
             </a>
           </Nav>
         </Container>

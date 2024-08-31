@@ -1,7 +1,7 @@
 import style from "./cameraoverview.module.css";
 import image1 from "../../../../assets/gopro11-about-img.png";
 import { Link } from "react-router-dom";
-import { useTranslation } from "react-i18next";
+import { Trans, useTranslation } from "react-i18next";
 import { motion } from "framer-motion";
 
 export function CameraOverview() {
@@ -49,7 +49,12 @@ export function CameraOverview() {
             }}
             className="text-5xl font-medium text-[#00000048] relative"
           >
-            For Every <span className="text-[#00000086]">Moment</span>
+            <Trans
+            i18nKey={"about.cameraTitle"}
+            components={{
+              1: <span className="text-[#00000086]" />
+            }}
+            />
           </motion.h1>
           <motion.p
             initial="hidden"
@@ -95,7 +100,9 @@ export function CameraOverview() {
               }}
               className={`${style.videoButton} border-white border text-white text-2xl font-light w-[8.75rem] h-[3.125rem] mt-[4.375rem]`}
             >
-              <Link to="/">See More</Link>
+              <Link to="/">
+              {t('about.videoButton')}
+              </Link>
             </button>
           </div>
         </div>

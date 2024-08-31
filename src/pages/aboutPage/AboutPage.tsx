@@ -1,5 +1,5 @@
 import { AboutNavbar } from "../../components/navbars/aboutNavbar/AboutNavbar";
-import { Hero } from "./hero/Hero";
+import { Hero } from "./home/hero/Hero";
 import { Home } from "./home/Home";
 
 export function AboutPage() {
