@@ -1,18 +1,26 @@
 import Spline from "@splinetool/react-spline";
+import { Trans, useTranslation } from "react-i18next";
 
 
 export function CameraFeature () {
+  const {t} = useTranslation()
+
     return (
         <div className="flex justify-between max-w-[1300px] mx-auto mt-10 p-2">
         <div className="w-[50%]">
-          <h1 className="text-7xl text-[#d0d0d05e] mt-[110px]">Nocturnal <span className="text-[#ffffffbe]">Brilliance</span></h1>
-          <p className="text-2xl text-[#ffffff9e] mt-[80px] w-[85%]">
-            Unlock the beauty of night with exceptional lens clarity. Perfect
-            for capturing vibrant details and deep contrasts in the darkest
-            conditions.
+          <h1 className="text-7xl text-[#d0d0d05e] mt-[6.875rem]">
+            <Trans
+            i18nKey={"shop.cameraFeatureTitle"}
+            components={{
+              1: <span className="text-[#ffffffbe]" />
+            }}
+            />
+            </h1>
+          <p className="text-2xl text-[#ffffff9e] mt-[5rem] w-[85%]">
+            {t("shop.cameraFeatureDesc")}
           </p>
         </div>
-        <div className="h-[600px] w-[600px]">
+        <div className="aspect-square w-[37.5rem]">
           <Spline scene="https://prod.spline.design/l9o5Bi-2FnsqSQgR/scene.splinecode" />
         </div>
       </div>

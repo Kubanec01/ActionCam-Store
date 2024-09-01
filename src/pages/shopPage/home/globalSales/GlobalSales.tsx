@@ -1,11 +1,14 @@
 import Spline from "@splinetool/react-spline";
 import { Link } from "react-router-dom";
 import style from "./globalSales.module.css"
+import { useTranslation } from "react-i18next";
 
 export function GlobalSales() {
+const {t} = useTranslation()
+
   return (
-    <div className="w-full relative mt-[40px]">
-      <div className="h-[760px] relative">
+    <div className="w-full relative mt-[2.5rem]">
+      <div className="h-[47.5rem] relative">
         <Spline
           className="absolute top-0 left-0 opacity-60"
           scene="https://prod.spline.design/AUXjUcJAi-8z1Efl/scene.splinecode"
@@ -20,16 +23,16 @@ export function GlobalSales() {
             <h1
               className="text-[#fee3f9] text-[8rem] leading-none uppercase font-bold"
             >
-              Over 3 million sales for 2023
+              {t("shop.globalSalesTitle")}
             </h1>
-            <div className="mt-[40px] mb-[120px]">
+            <div className="mt-[2.5rem] mb-[7.5rem]">
               <button
               style={{
                 borderRadius: "10px 3px"
               }}
-              className={`${style.button} text-[#ffedfb] border-[#ffedfb] border-2 text-2xl w-[130px] h-[50px]`}>
+              className={`${style.button} text-[#ffedfb] border-[#ffedfb] border-2 text-2xl w-[8.125rem] h-[3.125rem]`}>
                 <Link to="/">
-                  Upcoming
+                {t("shop.globalSalesButton")}
                 </Link>
               </button>
             </div>

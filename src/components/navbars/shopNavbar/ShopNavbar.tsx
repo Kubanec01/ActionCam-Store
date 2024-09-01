@@ -13,8 +13,11 @@ import { useShoppingCart } from "../../../context/ShoppingCartContext";
 import { CartItem } from "./CartItem";
 import { productsList } from "../../../data/productsList";
 import emptyCartImg from "../../../assets/empty-cart-img.png"
+import { useTranslation } from "react-i18next";
 
 export function ShopNavbar() {
+  const {t} = useTranslation()
+
   // STYLES
   const link = `${style.link}`;
   const linkIcon = "mx-auto text-3xl";
@@ -42,26 +45,26 @@ export function ShopNavbar() {
          max-w-[1000px] mx-auto flex flex-col justify-between mt-[1.25rem] bg-[#1a19198f]
         border-2 border-[#f1f1f193] overflow-hidden`}
       >
-        <Nav className="mx-auto w-[90%] h-[90px] flex items-center justify-center text-[#ffffffac] text-lg gap-32">
+        <Nav className="mx-auto w-[90%] h-[5.625rem] flex items-center justify-center text-[#ffffffac] text-lg gap-32">
           <a className={`${link} text-center`} href="#">
             <IoCameraOutline className={linkIcon} />
-            Cameras
+            {t("navbar.cameras")}
           </a>
           <a className={link} href="#">
             <AiOutlineStar className={linkIcon} />
-            Accessories
+            {t("navbar.accessories")}
           </a>
           <Link className={link} to="/about">
             <AiOutlineQuestion className={linkIcon} />
-            About
+            {t("navbar.about")}
           </Link>
           <Link className={link} to="/">
             <HiOutlineHome className={linkIcon} />
-            Home
+            {t("navbar.home")}
           </Link>
           <div className="relative">
             <Button
-              onClick={() => setIsOpen((prevState) => !prevState)}
+              onClick={() => setIsOpen(isOpen => !isOpen)}
               className={`${style.shoppingCartIcon}`}
             >
               {isOpen ? (
@@ -72,7 +75,7 @@ export function ShopNavbar() {
             </Button>
             {productsCount > 0 ? (
               <span
-                className="absolute bg-[#5b29d0] text-white border-2 border-[#1a1919] rounded-[100%] w-[26px] h-[26px] 
+                className="absolute bg-[#5b29d0] text-white border-2 border-[#1a1919] rounded-[100%] w-[1.625rem] aspect-square 
            text-sm top-0 -right-2 flex justify-center items-center font-medium"
               >
                 {productsCount < 100 ? productsCount : "99+"}

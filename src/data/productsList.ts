@@ -10,6 +10,7 @@ import accessoryImg4 from "../assets/extension-pole-img.png";
 import accessoryImg5 from "../assets/volta-img.png";
 import accessoryImg6 from "../assets/fetch-dog-img.png";
 
+
 export const productsList: AllProducts[] = [
   {
     id: "gopro12",

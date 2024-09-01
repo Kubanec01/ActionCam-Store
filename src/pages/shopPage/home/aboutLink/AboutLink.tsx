@@ -1,10 +1,13 @@
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import style from "./aboutLink.module.css"
+import { Trans, useTranslation } from "react-i18next";
 
 export function AboutLink() {
+const {t} = useTranslation()
+
   return (
-    <div className="w-full mt-[300px]">
+    <div className="w-full mt-[18.75rem]">
       <div className="flex max-w-[1200px] mx-auto">
         <motion.h1
           initial="hidden"
@@ -20,16 +23,20 @@ export function AboutLink() {
           }}
           className="text-[#ffffffa0] text-7xl font-medium shadow-inner"
         >
-          Want to know <br /> more{" "}
-          <span className="text-[#ffffffea]">about</span> the camera?
+          <Trans
+          i18nKey={"shop.aboutLinkTitle"}
+          components={{
+            1: <span className="text-[#ffffffea]" />
+          }}
+          />
         </motion.h1>
       </div>
-      <div className="text-[#ffffff] w-full flex justify-center mt-[250px]">
+      <div className="text-[#ffffff] w-full flex justify-center mt-[15.625rem]">
     <Link
         to="/about"
-        className={`${style.button} text-2xl font-[400] w-[180px] h-[40px] bg-[#53407f] rounded-2xl flex justify-center items-center`}
+        className={`${style.button} text-2xl font-[400] w-[11.25rem] h-[2.5rem] bg-[#53407f] rounded-2xl flex justify-center items-center`}
     >
-        See Specs
+        {t("shop.aboutLinkButton")}
     </Link>
 </div>
     </div>

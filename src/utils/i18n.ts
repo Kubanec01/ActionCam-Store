@@ -7,6 +7,22 @@ import { initReactI18next } from "react-i18next";
 const resources = {
   en: {
     translation: {
+      footer: {
+        footerTitle: "Capture the Thrill",
+        footerQuote:
+          '"Adventure is not in the destination, but in the moments you dare to capture."',
+      },
+      navbar: {
+        accessories: "Accessories",
+        application: "Application",
+        upcoming: "Upcoming",
+        shop: "Shop",
+        about: "About",
+        contactUs: "Contact Us",
+        ourStory: "Our Story",
+        home: "Home",
+        cameras: "Cameras",
+      },
       home: {
         cameraTitle: "Ultra Light",
         cameraDescription:
@@ -45,22 +61,6 @@ const resources = {
           4: "Longer Battery Life",
         },
       },
-      footer: {
-        footerTitle: "Capture the Thrill",
-        footerQuote:
-          '"Adventure is not in the destination, but in the moments you dare to capture."',
-      },
-      navbar: {
-        accessories: "Accessories",
-        application: "Application",
-        upcoming: "Upcoming",
-        shop: "Shop",
-        about: "About",
-        contactUs: "Contact Us",
-        ourStory: "Our Story",
-        home: "Home",
-        cameras: "Cameras",
-      },
       about: {
         homeTitle: "Conquer Heights and Depths",
         homeDesc:
@@ -89,6 +89,33 @@ const resources = {
         cameraDesc:
           "GoPro's are undeniably great for recording sport; whether it be skiing, running, skateboarding, climbing or mountain-biking, GoPros can be used to create amazing Point Of View videos as well as help you to record and make a note of your technique when carrying out your routines. Although GoPros were originally introduced as mountable action cameras, their size and video quality make them good travel cameras as well. In terms of durability, they are waterproof (as in you can record under water at shallow depths) and much tougher than a phone or camera.",
         videoButton: "See More",
+      },
+      shop: {
+        heroTitle: "Capture Anything, <1>Anywhere</1>",
+        heroVideoTitle: "Awaken the <1>Beast Within</1>",
+        heroVideoDes: "Unleash raw power. Feel the adrenaline, embrace the wild, and let the beast within take control!",
+        cameraFeatureTitle: "Nocturnal <1>Brilliance<1/>",
+        cameraFeatureDesc: "Unlock the beauty of night with exceptional lens clarity. Perfect for capturing vibrant details and deep contrasts in the darkest conditions.",
+        itemButton: "Add To Card",
+        camerasStoreTitle: "Ultimate <br/> <1>Camera</1> <br/> <2>Collection</2>",
+        accessoriesStoreTitle: "Essential <br/> <1>Camera</1> <br/> <2>Accessories</2>",
+        accessoryComplementTitle: "Experience Adventures <br/> Together With a <br/> <1>New POV</1>.",
+        aboutLinkTitle: "Want to know <br/> more <1>about</1> the camera?",
+        aboutLinkButton: "See Specs",
+        globalSalesTitle: "Over 3 million sales for 2023",
+        globalSalesButton: "Upcoming",
+      },
+      productList: {
+        goPro12: "HERO12 Black offers HDR 5.3K/4K video, HyperSmooth 6.0 stabilization, a 177° field-of-view, improved thermal performance, Bluetooth audio support, and pro-level features in a rugged, waterproof design.",
+        goPro11: "HERO11 Black automatically delivers highlight videos to your phone. Its large sensor enhances image quality, and HyperSmooth 5.0 ensures steady shots with AutoBoost and Horizon Lock.",
+        goPro10: "HERO10 Black is a highly versatile camera, equipped with the revolutionary GP2 processor. It captures 5.3K video at higher frame rates, takes 23MP photos, offers enhanced performance in low-light conditions, and features game-changing HyperSmooth 4.0 video stabilization in all modes.",
+        goPro11Mini: "HERO11 Black Mini offers top-notch video performance in a smaller, lighter design. It features a durable outer shell, dual mounting fingers for versatile mounting, and the same large image sensor for easy vertical shots. Highlight videos are automatically sent to your phone.",
+        headStrap: "Head Strap 2.0 offers three setups: use the headband with the top strap for stability, the headband alone for a low-profile look, or the removable clip for versatile mounting on caps, belts, and more. The main headband also enables mounting on stationary objects.",
+        lifeJacket: "This easy-to-spot accessory keeps your HERO camera afloat and adds protective padding. The wraparound design allows access to your camera buttons, front LCD screen, back touch screen, and folding fingers for easy mounting. Floaty also includes a tether point for added security.",
+        lightMod: "Add compact yet powerful LED lighting to your next adventure. With Light Mod, you can illuminate your subject with wide, smooth, even light and capture ultra crisp footage. Light Mod attaches to HERO cameras via Media Mod (sold separately), or works as a handy standalone light for use with GoPro mounts.",
+        extensionPole: "This extension pole stretches to 48in (122cm) and collapses to 10in (25cm), featuring a detachable wireless remote for easy photo-taking and recording. Made of durable, lightweight aluminum, it's waterproof for capturing activities in any condition.",
+        volta: "This extension pole stretches to 48in (122cm) and collapses to 10in (25cm), featuring a detachable wireless remote for easy photo-taking and recording. Made of durable, lightweight aluminum, it's waterproof for capturing activities in any condition.",
+        fetchDogHarness: "Capture the world from your dog’s point of view. This harness features camera mounts on the back + chest for a variety of perspectives—from bone-chewing, digging and front-paw action, to over-the-head shots of playing, running, fetch + more. Soft, padded construction keeps your pet comfortable. Fully adjustable to fit dogs from 20 to 120 lbs (9 to 54kg).", 
       },
     },
   },

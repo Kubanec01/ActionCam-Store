@@ -9,7 +9,7 @@ export function CamerasStore() {
     <>
       <div
         id="cameras-store"
-        className="w-full bg-[#000000e2] mt-[140px] p-4"
+        className="w-full bg-[#000000e2] mt-[8.75rem] p-4"
       >
         <CameraFeature />
         <ProductBars />
