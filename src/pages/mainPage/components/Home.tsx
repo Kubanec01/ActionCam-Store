@@ -13,7 +13,8 @@ export function Home() {
 
   return (
     <div className="mt-14 flex justify-center flex-col items-center p-2">
-      <div className="h-[43.75rem] w-[90%] max-w-[1500px] flex justify-between">
+      <div className="h-[43.75rem] w-[90%] max-w-[1500px] lg:flex justify-between 
+      xl:mb-0 lg:mb-[9.375rem] mb-[56.25rem]">
         {/* IMAGE 1 */}
         <motion.div
           initial="hidden"
@@ -27,10 +28,10 @@ export function Home() {
             hidden: { opacity: 0, y: 100 },
             visible: { opacity: 1, y: 0 },
           }}
-          className="w-[50%] flex justify-center items-center relative"
+          className="min-w-[50%] flex justify-center items-center relative"
         >
           <img
-            className="h-[37.5rem] aspect-square object-cover z-50"
+            className="h-[37.5rem] aspect-square object-contain z-50"
             src={image1}
             alt="gopro-img1"
           />
@@ -46,7 +47,7 @@ export function Home() {
           />
         </motion.div>
         {/* IMAGE 2 */}
-        <div className=" w-[50%]">
+        <div className="min-w-[50%]">
           <motion.div
             initial="hidden"
             whileInView="visible"
@@ -59,10 +60,10 @@ export function Home() {
               hidden: { opacity: 0, y: 100 },
               visible: { opacity: 1, y: 0 },
             }}
-            className=" flex justify-center items-center mt-[3.75rem] relative"
+            className=" flex justify-center items-center sm:mt-[3.75rem] -mt-[3.125rem] relative"
           >
             <img
-              className="h-[25rem] object-cover z-50"
+              className="sm:h-[30rem] h-[22.5rem] z-50 aspect-square object-contain"
               src={image2}
               alt="gopro-img2"
             />
@@ -89,12 +90,12 @@ export function Home() {
               hidden: { opacity: 0, x: 100 },
               visible: { opacity: 1, x: 0 },
             }}
-            className="ml-[9.75rem] mt-[1.875rem]"
+            className="xl:ml-[9.75rem] mt-[1.875rem]"
           >
-            <h2 className="text-[#fffffff2] font-bold text-2xl mb-[0.125rem]">
+            <h2 className="text-[#fffffff2] font-bold lg:text-2xl text-3xl mb-[0.125rem]">
               {t('home.cameraTitle')}
             </h2>
-            <p className="text-[#ffffffa7] text-lg w-[75%]">
+            <p className="text-[#ffffffa7] lg:text-lg text-xl w-[75%]">
               {t("home.cameraDescription")}
             </p>
           </motion.div>
