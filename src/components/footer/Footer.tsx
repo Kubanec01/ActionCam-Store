@@ -11,19 +11,19 @@ export function Footer() {
   const {t} = useTranslation()
   return (
     <div className="bg-[#0a0a0a] w-full p-4 mt-[1.25rem]">
-      <div className=" my-[3.125rem] w-[60%] max-w-[1200px] mx-auto flex justify-center">
+      <div className=" my-[3.125rem] xl:w-[60%] w-[80%] max-w-[1200px] mx-auto flex md:flex-row flex-col justify-center">
         {/* LEFT */}
         <div>
-          <h2 className="text-[#fffffff8] text-3xl mb-2 relative">
+          <h2 className="text-[#fffffff8] text-3xl mb-2 relative md:text-left text-center">
             {t('footer.footerTitle')}
           </h2>
           <p
-            className="text-[#ffffff6b] text-xl w-[75%] relative 
-          after:bg-[#ffffff2b] after:rounded-xl after:w-[90%] after:h-[2.5px] after:absolute after:-bottom-4 after:left-0"
+            className="text-[#ffffff6b] text-xl md:w-[75%] relative md:text-left text-center
+          after:bg-[#ffffff2b] after:rounded-xl md:after:w-[90%] after:w-[100%] after:h-[2.5px] after:absolute after:-bottom-4 after:left-0"
           >
             {t('footer.footerQuote')}
           </p>
-          <ul className="flex flex-row text-3xl gap-4 mt-[2.5rem]">
+          <ul className="flex md:justify-start justify-center flex-row text-3xl gap-4 mt-[2.5rem]">
             <li>
               <a href="https://www.instagram.com/_jay.valendine_/" target="_blank">
                 <GrInstagram className={`${style.icon}`} />
@@ -47,12 +47,12 @@ export function Footer() {
           </ul>
         </div>
         {/* RIGHT */}
-        <div className="flex justify-center flex-col gap-4">
+        <div className="flex justify-center lg:items-start md:items-end items-center text-xl lg:text-base flex-col lg:gap-4 md:mt-0 mt-10">
           <button
             style={{
               borderRadius: "15px 2px",
             }}
-            className={`${style.button} border-2 border-[#ffffff56] text-[#ffffff99] flex justify-center items-center w-[12.5rem] h-[3.125rem]`}
+            className={`${style.button} lg:border-2  border-[#ffffff56] text-[#ffffff99] flex justify-center items-center w-[12.5rem] h-[3.125rem]`}
           >
             <FaSquarePhone className="text-2xl mr-2 text-[#244ad5]" />
             <a href="tel:+421903871518">+421 903 871 518</a>
@@ -61,7 +61,7 @@ export function Footer() {
             style={{
               borderRadius: "2px 15px",
             }}
-            className={`${style.button} border-2 border-[#ffffff56] text-[#ffffff99] flex justify-center items-center w-[18.75rem] h-[3.125rem]`}
+            className={`${style.button} lg:border-2 border-[#ffffff56] text-[#ffffff99] flex justify-center items-center lg:w-[18.75rem] h-[3.125rem]`}
           >
             <CgMail className="text-3xl mr-2 text-[#244ad5]" />
             <a href="mailto:jakub.z.roman@gmail.com">jakub.z.roman@gmail.com</a>

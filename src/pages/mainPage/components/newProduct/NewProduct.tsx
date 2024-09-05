@@ -23,7 +23,7 @@ export function NewProduct() {
         backgroundSize: "cover",
         scrollMarginTop: "100px",
       }}
-      className="w-full mt-[12.5rem] mb-[1.25rem] p-4 lg:h-auto h-[1500px]"
+      className="w-full mt-[12.5rem] mb-[1.25rem] p-4 lg:h-auto h-[93.75rem]"
     >
       <div className="max-w-[1200px] mx-auto my-[2.5rem] relative">
         <motion.img
