@@ -1,10 +1,12 @@
 import { Container, Nav } from "react-bootstrap";
-import logoImg from "../../../assets/logo-img.png";
+import logoImg from "../../../../assets/logo-img.png";
 import Navbar from "react-bootstrap/Navbar";
 import { Link } from "react-router-dom";
 import { useEffect, useState } from "react";
 import style from "./homeNavbar.module.css";
 import { useTranslation } from "react-i18next";
+import { useScreenSize } from "../../../../hooks/useScreenSize";
+
 
 export function HomeNavbar() {
   const {t} = useTranslation()
@@ -13,6 +15,14 @@ export function HomeNavbar() {
   const link = `${style.link}`;
 
   const [isAtTop, setIsAtTop] = useState(true);
+  const windowWidth = useScreenSize()
+
+  // !!!!!!!
+  // ! Pri 768px a menej sprav z navbaru len bars icon a vsetky ponuky ktore sa rozbalia po kliknuti na bars button
+  // ! pod touto sirkou sa deaktivuje scroll bar ktory sa aktivuje ked nieje navbar na top-0
+  // !!!!!!!
+
+  
 
   useEffect(() => {
     const scrollStatus = () => {
@@ -31,9 +41,9 @@ export function HomeNavbar() {
   });
 
   return (
-    <Navbar className="fixed z-[1000] w-full">
+    <Navbar className="fixed z-[1000] w-full px-2">
       {isAtTop ? (
-        <Container className="w-[70%] max-w-[1300px] mx-auto flex justify-between h-[9.375rem]">
+        <Container className="2xl:w-[70%] max-w-[1300px] mx-auto flex justify-between h-[9.375rem]">
           <Navbar.Brand className="flex items-center w-[18.75rem]">
               <img className="object-cover w-full" src={logoImg} alt="" />
           </Navbar.Brand>

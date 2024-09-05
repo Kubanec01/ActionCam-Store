@@ -1,6 +1,6 @@
 import { Hero } from "./components/Hero";
 import { Home } from "./components/Home";
-import { HomeNavbar } from "../../components/navbars/homeNavbar/HomeNavbar";
+import { HomeNavbar } from "./components/homeNavbar/HomeNavbar";
 
 export function MainPage() {
   return (
