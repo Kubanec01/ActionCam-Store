@@ -7,11 +7,13 @@ import { motion } from "framer-motion";
 export function CameraOverview() {
   const { t } = useTranslation();
 
+  // ! od 1024 nizsie daj foktu kamery a text pod seba
+
   return (
     <div className="w-full mt-[17.5rem]">
       {/* CAMERA */}
-      <div className="max-w-[1300px] mx-auto flex">
-        <div className="w-[50%] flex justify-right">
+      <div className="max-w-[1300px] border border-red-600 mx-auto flex">
+        <div className="flex justify-right">
           <motion.img
             initial="hidden"
             whileInView="visible"
@@ -24,17 +26,19 @@ export function CameraOverview() {
               hidden: { opacity: 0, x: -100 },
               visible: { opacity: 1, x: 0 },
             }}
-            className="object-cover max-w-[480px]"
+            className="object-contain w-[2300px]"
             src={image1}
-            alt="gopro-11-img"
+            alt="goPro-11-img"
           />
         </div>
+        {/* TEXT */}
         <div
-        style={{
-          scrollMarginTop: "18.75rem"
-        }}
-        id="camera-overview"
-        className="ml-[3.125rem]">
+          style={{
+            scrollMarginTop: "18.75rem",
+          }}
+          id="camera-overview"
+          className="ml-[3.125rem] border border-red-600"
+        >
           <motion.h1
             initial="hidden"
             whileInView="visible"
@@ -47,13 +51,13 @@ export function CameraOverview() {
               hidden: { opacity: 0, x: 100 },
               visible: { opacity: 1, x: 0 },
             }}
-            className="text-5xl font-medium text-[#00000048] relative"
+            className="xl:text-5xl text-4xl font-medium text-[#00000048]"
           >
             <Trans
-            i18nKey={"about.cameraTitle"}
-            components={{
-              1: <span className="text-[#00000086]" />
-            }}
+              i18nKey={"about.cameraTitle"}
+              components={{
+                1: <span className="text-[#00000086]" />,
+              }}
             />
           </motion.h1>
           <motion.p
@@ -68,7 +72,7 @@ export function CameraOverview() {
               hidden: { opacity: 0, x: 100 },
               visible: { opacity: 1, x: 0 },
             }}
-            className="w-[80%] text-xl font-medium mt-3 text-[#000000e0]"
+            className="xl:text-xl text-lg font-medium mt-3 xl:w-[80%] w-[98%] text-[#000000e0]"
           >
             {t("about.cameraDesc")}
           </motion.p>
@@ -82,7 +86,10 @@ export function CameraOverview() {
           muted
           className="absolute right-0 bottom-0 z-0 w-full h-full object-cover"
         >
-          <source src="https://res.cloudinary.com/dcta0x1vy/video/upload/v1724600911/surfing-video_py9pne.mp4" type="video/mp4" />
+          <source
+            src="https://res.cloudinary.com/dcta0x1vy/video/upload/v1724600911/surfing-video_py9pne.mp4"
+            type="video/mp4"
+          />
         </video>
         <div
           className={`${style.videoContainer} w-full h-full flex absolute top-0 left-0 justify-center items-center p-6`}
@@ -100,9 +107,7 @@ export function CameraOverview() {
               }}
               className={`${style.videoButton} border-white border text-white text-2xl font-light w-[8.75rem] h-[3.125rem] mt-[4.375rem]`}
             >
-              <Link to="/">
-              {t('about.videoButton')}
-              </Link>
+              <Link to="/">{t("about.videoButton")}</Link>
             </button>
           </div>
         </div>

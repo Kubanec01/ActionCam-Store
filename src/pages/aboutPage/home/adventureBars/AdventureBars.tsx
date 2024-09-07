@@ -36,19 +36,19 @@ export function AdventureBars() {
   return (
     <div>
       {/* TEXT */}
-      <div className="mt-[11.25rem] mb-[3.75rem] flex flex-col items-center p-4 max-w-[1200px] mx-auto">
+      <div className="lg:mt-[11.25rem] mt-[15.625rem] mb-[3.75rem] flex flex-col items-center p-4 max-w-[1200px] mx-auto">
         <h1
-          className="text-5xl font-medium text-[#000000c2] relative
+          className="lg:text-5xl text-6xl font-medium text-[#000000c2] relative text-center
       before:bg-[#0000001f] before:w-[40%] before:h-[3px] before:rounded-xl before:absolute before:-top-8 before:left-[28.6%]"
         >
           {t("about.homeTitle")}
         </h1>
-        <p className="mt-[1.25rem] w-[60%] text-center text-lg font-medium text-[#000000c4]">
+        <p className="mt-[1.25rem] lg:w-[60%] w-[90%] text-center lg:text-lg text-xl font-medium text-[#000000c4]">
           {t("about.homeDesc")}
         </p>
       </div>
       {/* BARS */}
-      <div className="h-[40.625rem] flex gap-3 justify-center max-w-[1300px] mx-auto p-2">
+      <div className="flex lg:flex-row flex-col gap-3 justify-center max-w-[1300px] lg:mt-0 mt-[6.25rem] mx-auto p-2">
         {barsContent.map((c) => {
           return (
             <motion.div
@@ -69,7 +69,7 @@ export function AdventureBars() {
                 backgroundSize: "cover",
                 backgroundPosition: "center",
               }}
-              className="h-full w-[33%] shadow-2xl shadow-[#000000a9] rounded-[10px] border-[#434243]"
+              className="lg:h-[40.625rem] h-[300px] lg:w-[33%] shadow-2xl shadow-[#000000a9] rounded-[10px] border-[#434243]"
             >
               <div
                 className={`${style.bar} h-full w-full rounded-[10px] flex flex-col justify-end`}
@@ -85,6 +85,7 @@ export function AdventureBars() {
           );
         })}
       </div>
+      {/* TEXT */}
       <div className="mx-auto max-w-[1300px] mt-[2.813rem] p-2">
         <motion.h1
           initial="hidden"
@@ -98,7 +99,7 @@ export function AdventureBars() {
             hidden: { opacity: 0, x: -100 },
             visible: { opacity: 1, x: 0 },
           }}
-          className="text-3xl font-medium text-[#000000b4]"
+          className="lg:text-3xl text-5xl font-medium text-[#000000b4]"
         >
           {t("about.adventureBars.title")}
         </motion.h1>
@@ -114,7 +115,7 @@ export function AdventureBars() {
             hidden: { opacity: 0, x: -100 },
             visible: { opacity: 1, x: 0 },
           }}
-          className="text-xl font-medium text-[#0000008f] w-[70%] mt-[0.5rem]"
+          className="lg:text-xl text-2xl font-medium text-[#0000008f] lg:w-[70%] w-[90%] mt-[0.5rem]"
         >
           {t("about.adventureBars.desc")}
         </motion.p>
