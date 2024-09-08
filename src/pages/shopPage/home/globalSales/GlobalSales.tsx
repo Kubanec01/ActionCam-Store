@@ -19,18 +19,18 @@ const {t} = useTranslation()
           }}
           className="w-full h-full relative z-[100] flex justify-center items-center"
         >
-          <div className="max-w-[1400px]">
+          <div className="max-w-[1400px]  px-2">
             <h1
-              className="text-[#fee3f9] text-[8rem] leading-none uppercase font-bold"
+              className="text-[#fee3f9] lg:text-[8rem] md:text-[7rem] text-[6rem] leading-none uppercase font-bold"
             >
               {t("shop.globalSalesTitle")}
             </h1>
-            <div className="mt-[2.5rem] mb-[7.5rem]">
+            <div className="lg:mt-[2.5rem] mt-[1.5rem] mb-[7.5rem]">
               <button
               style={{
                 borderRadius: "10px 3px"
               }}
-              className={`${style.button} text-[#ffedfb] border-[#ffedfb] border-2 text-2xl w-[8.125rem] h-[3.125rem]`}>
+              className={`${style.button} text-[#ffedfb] border-[#ffedfb] border-2 lg:text-2xl text-xl lg:w-[8.125rem] w-[7.125rem] h-[3.125rem]`}>
                 <Link to="/">
                 {t("shop.globalSalesButton")}
                 </Link>

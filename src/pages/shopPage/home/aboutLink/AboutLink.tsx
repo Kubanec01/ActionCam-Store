@@ -8,7 +8,7 @@ const {t} = useTranslation()
 
   return (
     <div className="w-full mt-[18.75rem]">
-      <div className="flex max-w-[1200px] mx-auto">
+      <div className="flex max-w-[1200px] mx-auto p-2">
         <motion.h1
           initial="hidden"
           whileInView="visible"
@@ -21,7 +21,7 @@ const {t} = useTranslation()
             hidden: { opacity: 0, y: 100 },
             visible: { opacity: 1, y: 0 },
           }}
-          className="text-[#ffffffa0] text-7xl font-medium shadow-inner"
+          className="text-[#ffffffa0] lg:text-7xl text-6xl font-medium shadow-inner"
         >
           <Trans
           i18nKey={"shop.aboutLinkTitle"}
@@ -34,7 +34,7 @@ const {t} = useTranslation()
       <div className="text-[#ffffff] w-full flex justify-center mt-[15.625rem]">
     <Link
         to="/about"
-        className={`${style.button} text-2xl font-[400] w-[11.25rem] h-[2.5rem] bg-[#53407f] rounded-2xl flex justify-center items-center`}
+        className={`${style.button} text-2xl font-[400] md:w-[11.25rem] w-[9.25rem] h-[2.5rem] bg-[#53407f] rounded-2xl flex justify-center items-center`}
     >
         {t("shop.aboutLinkButton")}
     </Link>

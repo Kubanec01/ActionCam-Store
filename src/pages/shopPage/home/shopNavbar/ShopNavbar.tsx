@@ -9,11 +9,11 @@ import { AiOutlineQuestion } from "react-icons/ai";
 import { PiShoppingCartLight } from "react-icons/pi";
 import { IoReturnUpBackOutline } from "react-icons/io5";
 import { useState } from "react";
-import { useShoppingCart } from "../../../context/ShoppingCartContext";
 import { CartItem } from "./CartItem";
-import { productsList } from "../../../data/productsList";
-import emptyCartImg from "../../../assets/empty-cart-img.png"
+import emptyCartImg from "../../../../assets/empty-cart-img.png"
 import { useTranslation } from "react-i18next";
+import { useShoppingCart } from "../../../../context/ShoppingCartContext";
+import { productsList } from "../../../../data/productsList"
 
 export function ShopNavbar() {
   const {t} = useTranslation()

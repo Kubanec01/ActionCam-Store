@@ -5,7 +5,7 @@ import style from "./accessoryComplement.module.css";
 import { Trans, useTranslation } from "react-i18next";
 
 export function AccessoryComplement() {
-const {t} = useTranslation()
+  const { t } = useTranslation();
 
   const { increaseProductsCount } = useShoppingCart();
 
@@ -25,7 +25,7 @@ const {t} = useTranslation()
             className="rounded-2xl mx-auto max-w-[1300px] bg-[#050505] p-6 shadow-inner"
             key={p.id}
           >
-            <div className="flex">
+            <div className="flex lg:flex-row flex-col">
               {/* LEFT */}
               <div className="w-[50%]">
                 <h1 className="text-[#ffffffd5] text-6xl mt-[6.25rem]">
@@ -58,11 +58,11 @@ const {t} = useTranslation()
           </div>
         );
       }
-    })
-  }
+    });
+  };
 
   return (
-    <div className="w-full p-2">
+    <div className="w-full p-4">
       <div className="mb-[9.375rem] mt-[350px] mx-auto max-w-[1300px]">
         <motion.h1
           initial="hidden"
@@ -76,13 +76,13 @@ const {t} = useTranslation()
             hidden: { opacity: 0, y: 100 },
             visible: { opacity: 1, y: 0 },
           }}
-          className="text-[#ffffff61] text-7xl font-medium shadow-inner"
+          className="text-[#ffffff61] lg:text-7xl text-6xl font-medium shadow-inner"
         >
           <Trans
-          i18nKey={"shop.accessoryComplementTitle"}
-          components={{
-            1: <span className="text-[#ffffffc2]" />
-          }}
+            i18nKey={"shop.accessoryComplementTitle"}
+            components={{
+              1: <span className="text-[#ffffffc2]" />,
+            }}
           />
         </motion.h1>
       </div>

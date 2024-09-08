@@ -14,10 +14,10 @@ export function ProductBars() {
         return (
           <div
             key={p.id}
-            className="border-[3px] border-[#ffffff19] w-[31.25rem] rounded-xl bg-[#1515152a]"
+            className="border-[3px] border-[#ffffff19] lg:w-[500px] w-[350px] rounded-xl bg-[#1515152a]"
           >
             {/* IMG */}
-            <div className="w-full h-[19.375rem] my-10">
+            <div className="w-full lg:h-[310px] h-[240px] lg:my-10 my-6">
               <img
                 className="object-contain mx-auto w-full h-full"
                 src={p.image}
@@ -29,18 +29,18 @@ export function ProductBars() {
               <h1 className="text-[#ffffffe4] text-3xl text-center font-light">
                 {p.name}
               </h1>
-              <p className="text-[#ffffff94] text-lg mt-[0.625rem] mx-10 text-center">
+              <p className="text-[#ffffff94] lg:text-lg text-base mt-[10px] mx-10 text-center">
                 {p.desc}
               </p>
             </div>
             {/* PRICE & BUTTON */}
             <div className="flex justify-between w-[83%] mx-auto my-[3.125rem]">
               <p
-                className={`${style.colorText} font-medium text-3xl`}
+                className={`${style.colorText} font-medium lg:text-3xl text-2xl`}
               >{`$ ${p.price}`}</p>
               <button
                 onClick={() => increaseProductsCount(p.id)}
-                className={`${style.button} text-[#ffffffe4] text-2xl`}
+                className={`${style.button} text-[#ffffffe4] lg:text-2xl text-xl`}
               >
                 {t("shop.itemButton")}
               </button>
@@ -67,7 +67,7 @@ export function ProductBars() {
             hidden: { opacity: 0, y: 100 },
             visible: { opacity: 1, y: 0 },
           }}
-          className="text-[#ffffff38] text-8xl font-[300]"
+          className="text-[#ffffff38] md:text-8xl text-7xl font-[300]"
         >
           <Trans
             i18nKey={"shop.camerasStoreTitle"}
@@ -95,7 +95,7 @@ export function ProductBars() {
             hidden: { opacity: 0, y: 100 },
             visible: { opacity: 1, y: 0 },
           }}
-          className="text-[#ffffff38] text-8xl font-[300]"
+          className="text-[#ffffff38] md:text-8xl text-7xl font-[300]"
         >
            <Trans
             i18nKey={"shop.accessoriesStoreTitle"}

@@ -6,11 +6,11 @@ export function ShopHero() {
   const { t } = useTranslation();
 
   return (
-    <div className="mt-[17.5rem]">
+    <div className="md:mt-[17.5rem] mt-[21.25rem]">
       {/* text */}
-      <div className="max-w-[1900px] mx-auto h-[13.75rem] flex items-center">
+      <div className="max-w-[1900px] mx-auto h-[13.75rem] flex items-center pr-2">
         <h1
-          className={`${style.title} text-[#ffffffac] text-8xl ml-12 font-normal opacity-90`}
+          className={`${style.title} text-[#ffffffac] xl:text-8xl text-7xl ml-12 font-normal opacity-90`}
         >
           <Trans
             i18nKey={"shop.heroTitle"}
@@ -33,8 +33,8 @@ export function ShopHero() {
         style={{
           background: "linear-gradient(to top, #0b0b0b 5%, transparent, #0b0b0b 100%)"
         }}
-        className={`w-full h-full z-50 p-2`}>
-          <div className="max-w-[1330px] mx-auto h-full flex flex-col justify-center items-end">
+        className={`w-full h-full z-50 px-2`}>
+          <div className="max-w-[1330px] mx-auto h-full flex flex-col justify-center lg:items-end items-start">
             <motion.h2
               initial="hidden"
               whileInView="visible"
@@ -47,7 +47,7 @@ export function ShopHero() {
                 hidden: { opacity: 0, y: 100 },
                 visible: { opacity: 1, y: 0 },
               }}
-              className="text-[#ffffff6a] text-5xl w-[29.375rem]"
+              className="text-[#ffffff6a] text-5xl lg:w-[29.375rem]"
             >
               <Trans
                 i18nKey={"shop.heroVideoTitle"}
@@ -68,7 +68,7 @@ export function ShopHero() {
                 hidden: { opacity: 0, y: 100 },
                 visible: { opacity: 1, y: 0 },
               }}
-              className="text-[#ffffff72] text-3xl w-[29.25rem] mt-1"
+              className="text-[#ffffff72] text-3xl lg:w-[29.25rem] w-[65%] mt-1"
             >
               {t("shop.heroVideoDes")}
             </motion.p>
