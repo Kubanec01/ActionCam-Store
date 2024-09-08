@@ -10,10 +10,10 @@ export function CameraOverview() {
   // ! od 1024 nizsie daj foktu kamery a text pod seba
 
   return (
-    <div className="w-full mt-[17.5rem]">
+    <div className="mt-[17.5rem]">
       {/* CAMERA */}
-      <div className="max-w-[1300px] border border-red-600 mx-auto flex">
-        <div className="flex justify-right">
+      <div className="max-w-[1300px] mx-auto flex lg:flex-row flex-col justify-center items-center">
+        <div className="flex xl:justify-center lg:justify-start justify-center lg:w-[50%]">
           <motion.img
             initial="hidden"
             whileInView="visible"
@@ -26,7 +26,7 @@ export function CameraOverview() {
               hidden: { opacity: 0, x: -100 },
               visible: { opacity: 1, x: 0 },
             }}
-            className="object-contain w-[2300px]"
+            className="object-contain lg:w-[80%] sm:w-[50%] w-[80%]"
             src={image1}
             alt="goPro-11-img"
           />
@@ -37,7 +37,7 @@ export function CameraOverview() {
             scrollMarginTop: "18.75rem",
           }}
           id="camera-overview"
-          className="ml-[3.125rem] border border-red-600"
+          className="xl:ml-[3.125rem] lg:-ml-10 xl:mt-0 mt-14 lg:w-[50%] w-[90%]"
         >
           <motion.h1
             initial="hidden"
@@ -51,7 +51,7 @@ export function CameraOverview() {
               hidden: { opacity: 0, x: 100 },
               visible: { opacity: 1, x: 0 },
             }}
-            className="xl:text-5xl text-4xl font-medium text-[#00000048]"
+            className="text-5xl font-medium text-[#00000048] lg:text-start text-center"
           >
             <Trans
               i18nKey={"about.cameraTitle"}
@@ -72,14 +72,15 @@ export function CameraOverview() {
               hidden: { opacity: 0, x: 100 },
               visible: { opacity: 1, x: 0 },
             }}
-            className="xl:text-xl text-lg font-medium mt-3 xl:w-[80%] w-[98%] text-[#000000e0]"
+            className="text-xl font-medium mt-3 xl:w-[80%] w-[98%] text-[#000000e0] lg:text-start text-center"
           >
             {t("about.cameraDesc")}
           </motion.p>
         </div>
       </div>
+
       {/* VIDEO */}
-      <div className="w-full h-[1000px] relative mt-[9.375rem]">
+      <div className="w-full h-[1000px] relative lg:mt-[9.375rem] mt-[15rem]">
         <video
           autoPlay
           loop

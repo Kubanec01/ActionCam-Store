@@ -1,4 +1,4 @@
-import { AboutNavbar } from "../../components/navbars/aboutNavbar/AboutNavbar";
+import { AboutNavbar } from "./home/aboutNavbar/AboutNavbar";
 import { Hero } from "./home/hero/Hero";
 import { Home } from "./home/Home";
 

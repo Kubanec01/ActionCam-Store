@@ -2,12 +2,13 @@ import { Container, Nav } from "react-bootstrap";
 import logoImg from "../../../../assets/logo-img.png";
 import Navbar from "react-bootstrap/Navbar";
 import { Link } from "react-router-dom";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import style from "./homeNavbar.module.css";
 import { useTranslation } from "react-i18next";
 import { useScreenSize } from "../../../../hooks/useScreenSize";
 import { HiBars3BottomRight } from "react-icons/hi2";
 import { IoReturnUpBackOutline } from "react-icons/io5";
+import { useScrollStatus } from "../../../../hooks/useScrollStatus";
 
 export function HomeNavbar() {
   const { t } = useTranslation();
@@ -16,28 +17,11 @@ export function HomeNavbar() {
   const link = `${style.link}`;
   const smScreenLink = `${style.smScreenLink}`;
   const smScreenLinks = "w-[50%] flex flex-col text-2xl sm:gap-4 gap-5";
-
-  const [isAtTop, setIsAtTop] = useState(true);
+  
   const [isOpen, setIsOpen] = useState(false);
   const windowWidth = useScreenSize();
+  const isAtTop = useScrollStatus()
 
-  console.log(isOpen);
-
-  useEffect(() => {
-    const scrollStatus = () => {
-      if (window.scrollY === 0) {
-        setIsAtTop(true);
-      } else {
-        setIsAtTop(false);
-      }
-    };
-
-    window.addEventListener("scroll", scrollStatus);
-
-    return () => {
-      window.removeEventListener("scroll", scrollStatus);
-    };
-  });
 
   return (
     <div>
