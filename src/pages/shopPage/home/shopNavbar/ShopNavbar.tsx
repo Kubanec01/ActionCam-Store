@@ -37,7 +37,7 @@ export function ShopNavbar() {
   const totalPrice = Math.round(priceCalc * 100) / 100;
 
   return (
-    <Navbar className="fixed z-[1100] w-full px-2">
+    <Navbar className="lg:fixed z-[1100] w-full px-2">
       {screenWindow > 870 ? (
         <Container
           style={{
@@ -49,11 +49,11 @@ export function ShopNavbar() {
         border-2 border-[#f1f1f193] overflow-hidden`}
         >
           <Nav className="mx-auto w-[90%] h-[5.625rem] flex items-center justify-center text-[#ffffffac] text-lg gap-32">
-            <a className={`${link} text-center`} href="#">
+            <a className={`${link} text-center`} href="#cameras-section">
               <IoCameraOutline className={linkIcon} />
               {t("navbar.cameras")}
             </a>
-            <a className={link} href="#">
+            <a className={link} href="#accessories-section">
               <AiOutlineStar className={linkIcon} />
               {t("navbar.accessories")}
             </a>
@@ -142,7 +142,7 @@ export function ShopNavbar() {
                 className={`${style.shoppingCartIcon}`}
               >
                 {isOpen ? (
-                  <IoReturnUpBackOutline className="mx-auto sm:text-[2.8rem]" />
+                  <IoReturnUpBackOutline className="mx-auto text-[2.8rem]" />
                 ) : (
                   <PiShoppingCartLight className="mx-auto text-[2.8rem]" />
                 )}
@@ -170,14 +170,16 @@ export function ShopNavbar() {
                       return <CartItem key={p.id} {...p} />;
                     })
                   ) : (
-                    <div className="border w-full h-full">
-
+                    <div className="w-full h-full flex justify-start items-end">
+                      <h1 className="text-4xl text-[#ffffffbc] mb-[40px] font-light">
+                        Oops! It looks like your cart is empty.
+                      </h1>
                     </div>
                   )}
                 </ul>
               </div>
               <div className="h-full flex justify-end">
-                <p className="text-white text-3xl mr-6 mt-5">{`$${totalPrice}`}</p>
+                <p className="text-white md:text-3xl text-2xl mr-6 mt-2">{`$${totalPrice}`}</p>
               </div>
             </div>
           ) : (

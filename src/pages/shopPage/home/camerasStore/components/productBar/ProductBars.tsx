@@ -54,7 +54,12 @@ export function ProductBars() {
   return (
     <div className="p-3 overflow-hidden mb-[9.375rem]">
       {/* CAMERAS SECTION */}
-      <div className="mx-auto max-w-[1300px] mt-[7.5rem]">
+      <div
+      id="cameras-section"
+      style={{
+        scrollMarginTop: "-300px"
+      }}
+      className="mx-auto max-w-[1300px] mt-[7.5rem]">
         <motion.h1
           initial="hidden"
           whileInView="visible"
@@ -82,7 +87,12 @@ export function ProductBars() {
         {productBars("camera")}
       </div>
       {/* ACCESSORIES SECTION */}
-      <div className="mx-auto max-w-[1300px] mt-[18.75rem]">
+      <div
+      id="accessories-section"
+      style={{
+        scrollMarginTop: "-320px"
+      }}
+      className="mx-auto max-w-[1300px] mt-[18.75rem]">
         <motion.h1
           initial="hidden"
           whileInView="visible"

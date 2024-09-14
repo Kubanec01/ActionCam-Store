@@ -127,7 +127,7 @@ export function Accessories() {
         <div className={`${style.container} w-full h-full flex justify-center`}>
           <div className="lg:flex flex-row justify-between max-w-[1300px] my-[1.875rem]">
             <div className="lg:w-[50%] ml-[3.125rem] flex flex-col justify-center">
-              <h2 className="text-7xl font-bold text-[#0000004c] w-[31.25rem] mt-[1.25rem]">
+              <h2 className="sm:text-7xl text-6xl font-bold text-[#0000004c] w-[31.25rem] mt-[1.25rem]">
                   <Trans
                   i18nKey={"home.lifeJacketTitle"}
                   components={{
@@ -135,7 +135,7 @@ export function Accessories() {
                   }}
                   />
               </h2>
-              <p className="lg:text-xl text-2xl text-[#1a1a1af0] font-medium w-[80%] mt-[1.25rem]">
+              <p className="lg:text-xl text-xl text-[#1a1a1af0] font-medium w-[80%] mt-[1.25rem]">
                 {t("home.lifeJacketDesc")}
               </p>
               <div className="mt-[1.25rem] ml-[-0.125rem]">
