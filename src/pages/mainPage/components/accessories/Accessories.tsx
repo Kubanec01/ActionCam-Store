@@ -6,6 +6,7 @@ import sparkImg from "../../../../assets/spark-img.png";
 import style from "./accessories.module.css";
 import { motion } from "framer-motion";
 import { Trans, useTranslation } from "react-i18next";
+import { Link } from "react-router-dom";
 
 export function Accessories() {
   const { t } = useTranslation();
@@ -135,22 +136,23 @@ export function Accessories() {
                   }}
                   />
               </h2>
-              <p className="lg:text-xl text-xl text-[#1a1a1af0] font-medium w-[80%] mt-[1.25rem]">
+              <p className="lg:text-xl md:text-2xl text-xl text-[#1a1a1af0] font-medium w-[80%] mt-[1.25rem]">
                 {t("home.lifeJacketDesc")}
               </p>
               <div className="mt-[1.25rem] ml-[-0.125rem]">
-                <button
-                  className={`${style.button} text-xl font-medium border-black border-[0.125rem] w-[8.125rem] h-[2.625rem]`}
+                <Link
+                  to="/shop"
+                  className={`${style.button} text-xl font-medium py-2 px-6 border-black border-[0.125rem]`}
                 >
                   {t("home.lifeJacketButton")}
-                </button>
+                </Link>
               </div>
             </div>
             <div className="lg:w-[50%] flex lg:justify-center justify-end items-center">
               <img
                 className="aspect-square max-w-[500px] object-cover"
                 src={image3}
-                alt=""
+                alt="Life Jacket image"
               />
             </div>
           </div>

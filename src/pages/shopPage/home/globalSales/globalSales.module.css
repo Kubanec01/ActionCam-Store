@@ -1,8 +1,9 @@
 .button {
-    transform: translateX(0);
     transition: all 0.2s ease;
 }
 
 .button:hover {
-    transform: translateX(5%);
+    color: #b572f8;
+    border: 2px solid #b572f8;
+    font: 800;
 }

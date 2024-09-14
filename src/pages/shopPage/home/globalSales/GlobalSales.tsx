@@ -26,15 +26,14 @@ const {t} = useTranslation()
               {t("shop.globalSalesTitle")}
             </h1>
             <div className="lg:mt-[2.5rem] mt-[1.5rem] mb-[7.5rem]">
-              <button
+              <Link
+              to="/"
               style={{
                 borderRadius: "10px 3px"
               }}
-              className={`${style.button} text-[#ffedfb] border-[#ffedfb] border-2 lg:text-2xl text-xl lg:w-[8.125rem] w-[7.125rem] h-[3.125rem]`}>
-                <Link to="/">
+              className={`${style.button} text-[#ffedfb] border-[#ffedfb] border-2 lg:text-2xl text-xl px-4 py-2`}>
                 {t("shop.globalSalesButton")}
-                </Link>
-              </button>
+              </Link>
             </div>
           </div>
         </div>
