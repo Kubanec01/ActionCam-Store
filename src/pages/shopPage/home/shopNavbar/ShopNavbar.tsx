@@ -172,7 +172,7 @@ export function ShopNavbar() {
                   ) : (
                     <div className="w-full h-full flex justify-start items-end">
                       <h1 className="text-4xl text-[#ffffffbc] mb-[40px] font-light">
-                        Oops! It looks like your cart is empty.
+                        {t('navbar.emptyCart')}
                       </h1>
                     </div>
                   )}

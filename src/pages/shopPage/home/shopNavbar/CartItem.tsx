@@ -38,7 +38,7 @@ export function CartItem({ id, count }: CartItemProps) {
         </div>
       </div>
       {/* MID */}
-      <div className="h-full text-[#ffffff] flex items-center sm:gap-10 gap-1 w-[56%] justify-end">
+      <div className="h-full text-[#ffffff] flex sm:mt-0 mt-6 items-center sm:gap-10 gap-1 w-[56%] justify-end">
         <div className="flex md:justify-between justify-center items-center md:w-[140px]">
           <button
             onClick={() => increaseProductsCount(id)}
