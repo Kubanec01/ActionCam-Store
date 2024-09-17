@@ -99,7 +99,7 @@ export function AdventureBars() {
             hidden: { opacity: 0, x: -100 },
             visible: { opacity: 1, x: 0 },
           }}
-          className="lg:text-3xl text-5xl font-medium text-[#000000b4]"
+          className="lg:text-3xl text-5xl md:w-full w-[80%] font-medium text-[#000000b4]"
         >
           {t("about.adventureBars.title")}
         </motion.h1>

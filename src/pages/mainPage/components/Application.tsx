@@ -30,7 +30,7 @@ export function Application() {
               hidden: { opacity: 0, x: -100 },
               visible: { opacity: 1, x: 0 },
             }}
-            className="md:text-4xl text-5xl w-full mb-[0.625rem] text-white relative
+            className="md:text-4xl text-5xl md:w-full mb-[0.625rem] w-[50%] text-white relative
           before:bg-[#ffffff8a] before:w-[30%] before:h-[0.125rem] before:absolute before:-top-8 before:left-0 before:rounded-xl"
           >
             {t("home.appTitle")}

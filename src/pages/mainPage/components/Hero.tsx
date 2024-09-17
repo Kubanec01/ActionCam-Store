@@ -1,5 +1,9 @@
+import { Trans, useTranslation } from "react-i18next";
 
 export function Hero() {
+
+  const {t} = useTranslation()
+
   return (
     <div
       className="h-[56.25rem] flex justify-center items-center relative"
@@ -25,11 +29,12 @@ export function Hero() {
         {/* TEXT BODY */}
         <div className=" flex flex-col items-center justify-center text-center mb-[4.375rem]">
           <h1 className="text-[#ffffffe9] text-6xl mb-[1.25rem] leading-none">
-            Capture your passion
+            {t('home.heroTitle')}
           </h1>
           <p className="text-[#ffffff87] text-2xl">
-            Don't keep your experiences to yourself. <br />
-            Record, Share, Enjoy.
+            <Trans
+            i18nKey="home.heroDesc"
+             />
           </p>
         </div>
       </div>

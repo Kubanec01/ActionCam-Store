@@ -26,6 +26,8 @@ const resources = {
         emptyCart: "Oops! It looks like your cart is empty.",
       },
       home: {
+        heroTitle: "Capture your passion",
+        heroDesc: "Don't keep your experiences to yourself. <br /> Record, Share, Enjoy.",
         cameraTitle: "Ultra Light",
         cameraDescription:
           "Record your experiences in 5.3K footage at up to 60 fps and you can record 120 fps video in 4K. Only 153g will capture your life without you even realizing you're wearing it.",
@@ -147,13 +149,15 @@ const resources = {
         upcoming: "Pripravované",
         shop: "Obchod",
         about: "Info",
-        contactUs: "Kontaktujte nás",
+        contactUs: "Kontakt",
         ourStory: "Náš príbeh",
         home: "Domov",
         cameras: "Kamery",
         emptyCart: "Oops! Zdá sa, že váš košík je prázdny.",
       },
       home: {
+        heroTitle: "Zachyťte svoju vášeň",
+        heroDesc: "Nenechávajte si svoje skúsenosti pre seba. <br /> Nahrávajte, zdieľajte, užívajte si.",
         cameraTitle: "Ultra ľahké",
         cameraDescription:
           "Zaznamenajte svoje zážitky v 5,3K stopáži rýchlosťou až 60 fps a 120 fps video v 4K. Len 153 g zachytí váš život bez toho, aby ste si uvedomili, že ho ju na sebe.",
