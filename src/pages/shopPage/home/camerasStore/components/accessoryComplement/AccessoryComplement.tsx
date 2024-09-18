@@ -1,27 +1,22 @@
 import { motion } from "framer-motion";
 import { useShoppingCart } from "../../../../../../context/ShoppingCartContext";
-import { productsList } from "../../../../../../data/productsList";
 import style from "./accessoryComplement.module.css";
 import { Trans, useTranslation } from "react-i18next";
 import { useScreenSize } from "../../../../../../hooks/useScreenSize";
+import { productsList } from "../../../../../../data/ProductsList";
 
 export function AccessoryComplement() {
   const { t } = useTranslation();
+  
+  const products = productsList()
 
   const windowWidth = useScreenSize();
 
   const { increaseProductsCount } = useShoppingCart();
 
-  const isProductInList = productsList.some(
-    (p) => p.type === "accessory-complement"
-  );
-
-  if (!isProductInList) {
-    console.error('Product with type "accessory-complement" is not found.');
-  }
 
   const productBar = (type: string) => {
-    return productsList.map((p) => {
+    return products.map((p) => {
       if (p !== null && p.type === type) {
         return (
           <div

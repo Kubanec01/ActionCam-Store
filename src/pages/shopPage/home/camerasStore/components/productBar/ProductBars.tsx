@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { useShoppingCart } from "../../../../../../context/ShoppingCartContext";
-import { productsList } from "../../../../../../data/productsList";
+import { productsList } from "../../../../../../data/ProductsList";
 import style from "./productBar.module.css";
 import { Trans, useTranslation } from "react-i18next";
 
@@ -8,8 +8,10 @@ export function ProductBars() {
   const { increaseProductsCount } = useShoppingCart();
   const { t } = useTranslation();
 
+  const products = productsList()
+
   const productBars = (type: string) => {
-    return productsList.map((p) => {
+    return products.map((p) => {
       if (p !== null && p.type === type) {
         return (
           <div
@@ -29,12 +31,12 @@ export function ProductBars() {
               <h1 className="text-[#ffffffe4] text-3xl text-center font-light">
                 {p.name}
               </h1>
-              <p className="text-[#ffffff94] lg:text-lg text-base mt-[10px] mx-10 text-center">
+              <p className="text-[#ffffff94] lg:text-lg text-base mt-[10px] lg:mx-10 mx-5 text-center">
                 {p.desc}
               </p>
             </div>
             {/* PRICE & BUTTON */}
-            <div className="flex justify-between w-[83%] mx-auto my-[3.125rem]">
+            <div className="flex justify-between w-[83%] mx-auto lg:my-[4.125rem] mb-[3.125rem] mt-[5.125rem]">
               <p
                 className={`${style.colorText} font-medium lg:text-3xl text-2xl`}
               >{`$ ${p.price}`}</p>

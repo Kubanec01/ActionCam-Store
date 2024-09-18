@@ -1,6 +1,6 @@
 productsList;
 import { useShoppingCart } from "../../../../context/ShoppingCartContext";
-import { productsList } from "../../../../data/productsList";
+import { productsList } from "../../../../data/ProductsList";
 import { HiOutlineTrash } from "react-icons/hi2";
 
 type CartItemProps = {
@@ -15,7 +15,9 @@ export function CartItem({ id, count }: CartItemProps) {
     removeProductFromCart,
   } = useShoppingCart();
 
-  const data = productsList.find((p) => p.id === id);
+  const products = productsList()
+
+  const data = products.find((p) => p.id === id);
 
   const totalDataPrice = Math.round(data!.price * count * 100) / 100;
 

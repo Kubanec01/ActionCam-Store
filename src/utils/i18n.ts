@@ -130,7 +130,7 @@ const resources = {
         extensionPole:
           "This extension pole stretches to 48in (122cm) and collapses to 10in (25cm), featuring a detachable wireless remote for easy photo-taking and recording. Made of durable, lightweight aluminum, it's waterproof for capturing activities in any condition.",
         volta:
-          "This extension pole stretches to 48in (122cm) and collapses to 10in (25cm), featuring a detachable wireless remote for easy photo-taking and recording. Made of durable, lightweight aluminum, it's waterproof for capturing activities in any condition.",
+          "Ultra versatile by design, Volta is a premium battery grip and a whole lot more. It combines with your GoPro to give you over 5.5 hours of 4K30 recording.1 It also features built-in buttons for easy one-handed camera control.",
         fetchDogHarness:
           "Capture the world from your dog’s point of view. This harness features camera mounts on the back + chest for a variety of perspectives—from bone-chewing, digging and front-paw action, to over-the-head shots of playing, running, fetch + more. Soft, padded construction keeps your pet comfortable. Fully adjustable to fit dogs from 20 to 120 lbs (9 to 54kg).",
       },
@@ -244,25 +244,25 @@ const resources = {
       },
       productList: {
         goPro12:
-          "HERO12 Black offers HDR 5.3K/4K video, HyperSmooth 6.0 stabilization, a 177° field-of-view, improved thermal performance, Bluetooth audio support, and pro-level features in a rugged, waterproof design.",
+          "HERO12 Black ponúka HDR 5,3K/4K video, stabilizáciu HyperSmooth 6.0, 177° zorné pole, vylepšený tepelný výkon, Bluetooth audio podporu a funkcie na profesionálnej úrovni v odolnom vodotesnom prevedení.",
         goPro11:
-          "HERO11 Black automatically delivers highlight videos to your phone. Its large sensor enhances image quality, and HyperSmooth 5.0 ensures steady shots with AutoBoost and Horizon Lock.",
+          "HERO11 Black automaticky dodáva zvýraznené videá do vášho telefónu. Jeho veľký snímač zvyšuje kvalitu obrazu a HyperSmooth 5.0 zaisťuje stabilné zábery s funkciami AutoBoost a Horizon Lock.",
         goPro10:
-          "HERO10 Black is a highly versatile camera, equipped with the revolutionary GP2 processor. It captures 5.3K video at higher frame rates, takes 23MP photos, offers enhanced performance in low-light conditions, and features game-changing HyperSmooth 4.0 video stabilization in all modes.",
+          "HERO10 Black je vysoko všestranný fotoaparát vybavený revolučným procesorom GP2. Zachytáva 5,3K video pri vyšších snímkových frekvenciách, fotí 23MP fotografie, ponúka vylepšený výkon pri slabom osvetlení a vo všetkých režimoch obsahuje prevratnú stabilizáciu videa HyperSmooth 4.0.",
         goPro11Mini:
-          "HERO11 Black Mini offers top-notch video performance in a smaller, lighter design. It features a durable outer shell, dual mounting fingers for versatile mounting, and the same large image sensor for easy vertical shots. Highlight videos are automatically sent to your phone.",
+          "HERO11 Black Mini ponúka špičkový video výkon v menšom a ľahšom prevedení. Je vybavený odolným vonkajším plášťom, dvojitými montážnymi prstami pre všestrannú montáž a rovnako veľkým obrazovým snímačom pre jednoduché vertikálne zábery. Zvýraznené videá sa automaticky odošlú do telefónu.",
         headStrap:
-          "Head Strap 2.0 offers three setups: use the headband with the top strap for stability, the headband alone for a low-profile look, or the removable clip for versatile mounting on caps, belts, and more. The main headband also enables mounting on stationary objects.",
+          "Head Strap 2.0 ponúka tri nastavenia: použite hlavový most s horným popruhom pre stabilitu, samotný hlavový most pre nízkoprofilový vzhľad alebo odnímateľnú sponu pre všestrannú montáž na šiltovky, opasky a ďalšie. Hlavná čelenka umožňuje montáž aj na stacionárne predmety.",
         lifeJacket:
-          "This easy-to-spot accessory keeps your HERO camera afloat and adds protective padding. The wraparound design allows access to your camera buttons, front LCD screen, back touch screen, and folding fingers for easy mounting. Floaty also includes a tether point for added security.",
+          "Toto ľahko rozpoznateľné príslušenstvo udrží vašu kameru HERO nad vodou a pridáva ochranné čalúnenie. Obvodový dizajn umožňuje prístup k tlačidlám fotoaparátu, prednej LCD obrazovke, zadnej dotykovej obrazovke a skladacím prstom pre jednoduchú montáž. Floaty tiež obsahuje upínací bod pre väčšiu bezpečnosť.",
         lightMod:
-          "Add compact yet powerful LED lighting to your next adventure. With Light Mod, you can illuminate your subject with wide, smooth, even light and capture ultra crisp footage. Light Mod attaches to HERO cameras via Media Mod (sold separately), or works as a handy standalone light for use with GoPro mounts.",
+          "Pridajte do svojho ďalšieho dobrodružstva kompaktné, ale výkonné LED osvetlenie. S režimom Light Mod môžete osvetliť svoj objekt širokým, hladkým a rovnomerným svetlom a zachytiť mimoriadne ostré zábery. Light Mod sa pripája ku kamerám HERO cez Media Mod alebo funguje ako samostatné svetlo na použitie s držiakmi GoPro.",
         extensionPole:
-          "This extension pole stretches to 48in (122cm) and collapses to 10in (25cm), featuring a detachable wireless remote for easy photo-taking and recording. Made of durable, lightweight aluminum, it's waterproof for capturing activities in any condition.",
+          "Táto predlžovacia tyč sa natiahne na 48 palcov (122 cm) a zloží sa na 10 palcov (25 cm) a obsahuje odnímateľné bezdrôtové diaľkové ovládanie pre jednoduché fotografovanie a nahrávanie. Vyrobené z odolného, ​​ľahkého hliníka, je vodotesné pre snímanie aktivít v akýchkoľvek podmienkach.",
         volta:
-          "This extension pole stretches to 48in (122cm) and collapses to 10in (25cm), featuring a detachable wireless remote for easy photo-taking and recording. Made of durable, lightweight aluminum, it's waterproof for capturing activities in any condition.",
+          "Ultra všestranný dizajn, Volta je prémiový batériový grip a oveľa viac. V kombinácii s vašou GoPro vám poskytne viac ako 5,5 hodiny záznamu v rozlíšení 4K30.1 Obsahuje tiež vstavané tlačidlá na jednoduché ovládanie kamery jednou rukou.",
         fetchDogHarness:
-          "Capture the world from your dog’s point of view. This harness features camera mounts on the back + chest for a variety of perspectives—from bone-chewing, digging and front-paw action, to over-the-head shots of playing, running, fetch + more. Soft, padded construction keeps your pet comfortable. Fully adjustable to fit dogs from 20 to 120 lbs (9 to 54kg).",
+          "Zachyťte svet z pohľadu vášho psa. Tento postroj je vybavený držiakmi kamery na chrbte + na hrudi pre rôzne perspektívy – od žuvania kostí, kopania a akcie prednými labkami až po zábery hrania, behu, aportovania a ďalších vecí cez hlavu. Mäkká, polstrovaná konštrukcia udržuje vášho domáceho maznáčika v pohodlí. Plne nastaviteľný pre psov od 20 do 120 libier (9 až 54 kg).",
       },
     },
   },

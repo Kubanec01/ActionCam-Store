@@ -13,11 +13,13 @@ import { CartItem } from "./CartItem";
 import emptyCartImg from "../../../../assets/empty-cart-img.png";
 import { useTranslation } from "react-i18next";
 import { useShoppingCart } from "../../../../context/ShoppingCartContext";
-import { productsList } from "../../../../data/productsList";
+import { productsList } from "../../../../data/ProductsList";
 import { useScreenSize } from "../../../../hooks/useScreenSize";
 
 export function ShopNavbar() {
   const { t } = useTranslation();
+
+  const products = productsList()
 
   // STYLES
   const link = `${style.link}`;
@@ -31,7 +33,7 @@ export function ShopNavbar() {
   const productsCount = cartProductsCount;
 
   const priceCalc = cartProducts.reduce((total, currProduct) => {
-    const product = productsList.find((p) => p.id === currProduct.id);
+    const product = products.find((p) => p.id === currProduct.id);
     return total + (product?.price || 0) * currProduct.count;
   }, 0);
   const totalPrice = Math.round(priceCalc * 100) / 100;
