@@ -90,9 +90,9 @@ export function HomeNavbar() {
           className="z-[1000] w-full fixed h-[7.5rem] bg-[#000000c3]"
         >
           <Container className="w-full h-full mx-auto flex justify-between items-center">
-            <Navbar.Brand className="w-[40%] h-full pl-2">
+            <Navbar.Brand className="w-[40%] h-full pl-2 flex justify-center items-center">
               <img
-                className="w-full h-full object-cover opacity-85"
+                className="w-full object-cover opacity-85"
                 src={logoImg}
                 alt="goPro-logo-img"
               />
@@ -100,7 +100,7 @@ export function HomeNavbar() {
             <div className="h-full w-[20%] flex justify-center items-center">
               <button
                 onClick={() => setIsOpen((isOpen) => !isOpen)}
-                className="text-white text-5xl"
+                className="text-white md:text-5xl text-4xl"
               >
                 {!isOpen ? <HiBars3BottomRight /> : <IoReturnUpBackOutline />}
               </button>
@@ -108,7 +108,7 @@ export function HomeNavbar() {
             <Nav
               className={`${
                 isOpen ? style.activeNavbar : style.inactiveNavbar
-              } absolute z-[1000] w-full h-[16.25rem] bg-[#000000c3] p-2`}
+              } absolute z-[1000] w-full h-[16.25rem] bg-[#000000c3]`}
             >
               <div className="sm:w-[60%] w-[80%] mx-auto flex justify-between mt-10 relative
               before:absolute before:w-[120%] before:h-[0.125rem] before:rounded-xl before:bg-[#ffffff39] before:-left-[8%] before:-top-12

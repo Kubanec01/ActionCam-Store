@@ -13,7 +13,7 @@ export function Application() {
       style={{
         scrollMarginTop: "12.5rem",
       }}
-      className="w-full sm:mt-[12.5rem] mt-[14.75rem] p-4"
+      className="w-full md:mt-[12.5rem] mt-[8.75rem] p-4"
     >
       <div className="max-w-[1200px] mx-auto md:flex justify-between">
         {/* TEXT AND BUTTONS */}
@@ -30,7 +30,7 @@ export function Application() {
               hidden: { opacity: 0, x: -100 },
               visible: { opacity: 1, x: 0 },
             }}
-            className="md:text-4xl text-5xl md:w-full mb-[0.625rem] w-[50%] text-white relative
+            className="md:text-4xl text-4xl md:w-full mb-[0.625rem] w-[50%] text-white relative
           before:bg-[#ffffff8a] before:w-[30%] before:h-[0.125rem] before:absolute before:-top-8 before:left-0 before:rounded-xl"
           >
             {t("home.appTitle")}
@@ -47,7 +47,7 @@ export function Application() {
               hidden: { opacity: 0, x: -100 },
               visible: { opacity: 1, x: 0 },
             }}
-            className="md:text-xl text-2xl md:w-full w-[40%] text-[#ffffff8a] relative
+            className="md:text-xl text-xl md:w-full w-[40%] text-[#ffffff8a] relative
           after:bg-[#ffffff8a] after:w-[80%] after:h-[0.125rem] after:absolute after:-bottom-8 after:left-0 after:rounded-xl"
           >
             {t("home.appDesc")}

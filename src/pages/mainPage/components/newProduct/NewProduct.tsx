@@ -23,7 +23,7 @@ export function NewProduct() {
         backgroundSize: "cover",
         scrollMarginTop: "100px",
       }}
-      className="w-full mt-[12.5rem] mb-[1.25rem] p-4 lg:h-auto h-[93.75rem]"
+      className="w-full mt-[12.5rem] mb-[1.25rem] p-4 lg:h-auto md:h-[93.75rem] h-[78.75rem]"
     >
       <div className="max-w-[1200px] mx-auto my-[2.5rem] relative">
         <motion.img
@@ -38,11 +38,11 @@ export function NewProduct() {
             hidden: { opacity: 0, x: 100 },
             visible: { opacity: 1, x: 0 },
           }}
-          className="object-cover absolute sm:-right-[5rem] xl:top-[8.125rem] lg:top-[21.875rem] sm:top-[56.25rem] top-[59.25rem] w-[36.25rem] z-10"
+          className="object-cover absolute sm:-right-[5rem] xl:top-[8.125rem] lg:top-[21.875rem] sm:top-[56.25rem] top-[50.25rem] w-[36.25rem] z-10"
           src={image1}
           alt="gopro-13-img"
         />
-        <h2 className="text-[#fffffff9] xl:w-[100%] w-[80%] font-bold md:text-[9rem] text-[6rem] leading-none relative z-50 shadow-inner">
+        <h2 className="text-[#fffffff9] xl:w-[100%] md:w-[80%] font-bold md:text-[9rem] text-[4rem] leading-none relative z-50 shadow-inner">
           <Trans
           i18nKey={"home.newProductTitle"}
           components={{
@@ -50,10 +50,10 @@ export function NewProduct() {
           }}
           />
         </h2>
-        <p className="text-[#ffffffb3] lg:text-[1.3rem] text-2xl lg:leading-[1.6rem] md:w-[50%] w-[80%] mt-[2.5rem]">
+        <p className="text-[#ffffffb3] lg:text-[1.3rem] text-2xl lg:leading-[1.6rem] md:w-[50%] w-[90%] md:mt-[2.5rem] mt-[1.8rem]">
           {t('home.newProductDesc')}
         </p>
-        <div className="mt-[3.125rem]  flex justify-between">
+        <div className="md:mt-[3.125rem] mt-[5.125rem] flex justify-between">
           <div>
             <ul className="text-[#ffffffe9] text-2xl flex flex-col gap-5">
               <motion.li

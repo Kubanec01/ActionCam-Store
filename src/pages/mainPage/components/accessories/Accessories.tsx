@@ -14,7 +14,7 @@ export function Accessories() {
     <div className="mt-[140px] w-full">
       {/* VIDEO */}
       <div className="w-full h-[50rem] relative flex justify-center items-center
-      lg:mt-0 mt-[12.5rem]">
+      lg:mt-0 md:mt-[12.5rem] mt-[5.5rem]">
         <video
           autoPlay
           loop
@@ -35,7 +35,7 @@ export function Accessories() {
             >
               {t("home.videoAccessoryDescTitle")}
             </h2>
-            <p className="text-[#ffffffa1] text-3xl font-medium sm:w-[37.5rem] w-[25rem]  mb-[8.125rem]">
+            <p className="text-[#ffffffa1] text-3xl font-medium sm:w-[37.5rem] w-[18rem]  mb-[8.125rem]">
               <Trans
                 i18nKey="home.videoAccessoryDescDesc"
                 components={{
@@ -53,11 +53,11 @@ export function Accessories() {
         style={{
           scrollMarginTop: "13.75rem",
         }}
-        className="w-full flex lg:flex-row flex-col justify-between max-w-[1500px] mx-auto lg:mt-[9.375rem] mt-[16.25rem] p-4"
+        className="w-full flex lg:flex-row flex-col justify-between max-w-[1500px] mx-auto lg:mt-[9.375rem] md:mt-[16.25rem] mt-[10.25rem] p-4"
       >
         {/* TEXT */}
         <div className="lg:w-[70%] w-[80%]">
-          <div className="flex flex-col items-start lg:w-[50%] mt-3 2xl:ml-[50%] ml-[30%] p-2">
+          <div className="flex flex-col items-start lg:w-[50%] mt-3 2xl:ml-[50%] md:ml-[30%] p-2">
             <motion.h2
               initial="hidden"
               whileInView="visible"
@@ -70,7 +70,7 @@ export function Accessories() {
                 hidden: { opacity: 0, x: -100 },
                 visible: { opacity: 1, x: 0 },
               }}
-              className="text-[#fffffff7] relative xl:text-6xl text-5xl mb-[1.25rem] before:w-[28.125rem] before:h-[0.125rem] before:absolute before:rounded-xl before:bg-[#ffffff4c]
+              className="text-[#fffffff7] relative xl:text-6xl md:text-5xl text-4xl mb-[1.25rem] before:w-[28.125rem] before:h-[0.125rem] before:absolute before:rounded-xl before:bg-[#ffffff4c]
             before:-top-8 before:-left-[12.5rem]"
             >
               <Trans
@@ -97,7 +97,7 @@ export function Accessories() {
           </div>
         </div>
         .{/* IMAGE */}
-        <div className="lg:w-[60%] flex lg:justify-start justify-center items-center lg:mt-0 mt-[1.875rem]">
+        <div className="lg:w-[60%] flex lg:justify-start justify-center items-center lg:mt-0 md:mt-[1.875rem] mt-[3.875rem]">
           <motion.img
             initial="hidden"
             whileInView="visible"
@@ -127,8 +127,8 @@ export function Accessories() {
       >
         <div className={`${style.container} w-full h-full flex justify-center`}>
           <div className="lg:flex flex-row justify-between max-w-[1300px] my-[1.875rem]">
-            <div className="lg:w-[50%] ml-[3.125rem] flex flex-col justify-center">
-              <h2 className="sm:text-7xl text-6xl font-bold text-[#0000004c] w-[90%] mt-[1.25rem]">
+            <div className="lg:w-[50%] md:ml-[3.125rem] ml-[1.125rem] flex flex-col justify-center">
+              <h2 className="sm:text-7xl text-5xl font-bold text-[#0000004c] w-[90%] mt-[1.25rem]">
                   <Trans
                   i18nKey={"home.lifeJacketTitle"}
                   components={{
@@ -136,10 +136,10 @@ export function Accessories() {
                   }}
                   />
               </h2>
-              <p className="lg:text-xl md:text-2xl text-xl text-[#1a1a1af0] font-medium w-[80%] mt-[1.25rem]">
+              <p className="lg:text-xl md:text-2xl text-xl text-[#1a1a1af0] font-medium md:w-[80%] w-[90%] mt-[1.25rem]">
                 {t("home.lifeJacketDesc")}
               </p>
-              <div className="mt-[1.25rem] ml-[-0.125rem]">
+              <div className="md:mt-[1.25rem] mt-[2.25rem] ml-[-0.125rem]">
                 <Link
                   to="/shop"
                   className={`${style.button} text-xl font-medium py-2 px-6 border-black border-[0.125rem]`}
@@ -150,7 +150,7 @@ export function Accessories() {
             </div>
             <div className="lg:w-[50%] flex lg:justify-center justify-end items-center">
               <img
-                className="aspect-square max-w-[500px] object-cover"
+                className="aspect-square lg:w-[80%] md:w-[50%] w-[96%] object-cover"
                 src={image3}
                 alt="Life Jacket image"
               />
@@ -173,7 +173,7 @@ export function Accessories() {
             hidden: { opacity: 0, x: -100 },
             visible: { opacity: 1, x: 0 },
           }}
-          className="lg:w-[50%] md:w-[60%] w-[85%] flex justify-center relative"
+          className="lg:w-[50%] md:w-[60%] flex justify-center relative"
         >
           <img
             className="object-cover w-[96%] z-50"
@@ -187,8 +187,8 @@ export function Accessories() {
           />
         </motion.div>
         {/* TEXT */}
-        <div className="lg:w-[50%] w-[80%]">
-          <div className="w-full 2xl:mt-[11.25rem] lg:mt-[8.5rem]">
+        <div className="lg:w-[50%] md:w-[80%] w-[90%]">
+          <div className="w-full 2xl:mt-[11.25rem] lg:mt-[8.5rem] mt-[2.5rem]">
             <motion.h2
               initial="hidden"
               whileInView="visible"
@@ -201,7 +201,7 @@ export function Accessories() {
                 hidden: { opacity: 0, x: 100 },
                 visible: { opacity: 1, x: 0 },
               }}
-              className="text-white sm:text-4xl text-5xl lg:text-left text-center mb-[0.625rem] relative lg:before:opacity-100 before:opacity-0
+              className="text-white md:text-4xl text-4xl text-left mb-[0.625rem] relative lg:before:opacity-100 before:opacity-0
             before:w-[30%] before:h-[0.125rem] before:absolute before:bg-[#ffffff4f] before:-top-8 before:left-0 before:rounded-xl"
             >
               {t("home.ledTitle")}
@@ -218,7 +218,7 @@ export function Accessories() {
                 hidden: { opacity: 0, x: 100 },
                 visible: { opacity: 1, x: 0 },
               }}
-              className="text-[#ffffff8c] sm:text-xl text-2xl lg:w-[80%] lg:text-left text-center relative lg:after:opacity-100 after:opacity-0 
+              className="text-[#ffffff8c] md:text-xl text-xl lg:w-[80%] w-[95%] text-left relative lg:after:opacity-100 after:opacity-0 
             after:absolute after:bg-[#ffffff4f] after:-bottom-10 after:right-0 after:w-[80%] after:h-[0.125rem]"
             >
               {t("home.ledDesc")}
