@@ -12,9 +12,10 @@ export function Home() {
   const { t } = useTranslation();
 
   return (
-    <div className="mt-14 flex justify-center flex-col items-center">
+    <div className="md:mt-14 flex justify-center flex-col items-center">
+      {/* ULTRA LIGHT SECTION */}
       <div className="h-[43.75rem] w-[90%] max-w-[1500px] lg:flex justify-between 
-      xl:mb-0 lg:mb-[9.375rem] mb-[46.25rem]">
+      xl:mb-0 lg:mb-[9.375rem] md:mb-[46.25rem] mb-[26.25rem]">
         {/* IMAGE 1 */}
         <motion.div
           initial="hidden"
@@ -31,7 +32,7 @@ export function Home() {
           className="min-w-[50%] flex justify-center items-center relative"
         >
           <img
-            className="h-[37.5rem] aspect-square object-contain z-50"
+            className="md:h-[37.5rem] h-[27.5rem] aspect-square object-contain z-50"
             src={image1}
             alt="gopro-img1"
           />
@@ -60,10 +61,10 @@ export function Home() {
               hidden: { opacity: 0, y: 100 },
               visible: { opacity: 1, y: 0 },
             }}
-            className=" flex justify-center items-center sm:mt-[3.75rem] -mt-[3.125rem] relative"
+            className="flex justify-center items-center sm:mt-[3.75rem] relative"
           >
             <img
-              className="sm:h-[30rem] h-[22.5rem] z-50 aspect-square object-contain"
+              className="md:h-[30rem] h-[16.5rem] z-50 aspect-square object-contain"
               src={image2}
               alt="gopro-img2"
             />

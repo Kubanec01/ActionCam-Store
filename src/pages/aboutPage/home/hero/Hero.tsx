@@ -27,7 +27,7 @@ export function Hero() {
             Capture the Thrill
           </h1>
         ) : (
-          <h1 className={`${style.pageTitle} text-[#fffffff1] lg:text-[11.5rem] sm:text-[8.4rem] text-[6.2rem] lg:leading-[9.3rem] sm:leading-[6.8rem] leading-[5rem] uppercase font-bold absolute lg:bottom-[0.375rem] sm:bottom-[0.313rem] bottom-[0.225rem] -left-1`}>
+          <h1 className={`${style.pageTitle} text-[#fffffff1] lg:text-[11.5rem] md:text-[8.4rem] text-[5.2rem] lg:leading-[9.3rem] sm:leading-[6.8rem] leading-[5rem] uppercase font-bold absolute lg:bottom-[0.375rem] md:bottom-[0.313rem] -bottom-[0.16rem] -left-1`}>
             Capture <br />
             the Thrill
           </h1>

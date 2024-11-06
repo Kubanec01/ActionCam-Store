@@ -65,7 +65,7 @@ export function Application() {
                 hidden: { opacity: 0, x: -100 },
                 visible: { opacity: 1, x: 0 },
               }}
-              className="object-cover lg:mb-0 mb-[2.5rem] md:w-[16.25rem] w-[15rem]  opacity-90"
+              className="object-cover lg:mb-0 mb-[2.5rem] md:w-[16.25rem] w-[14rem]  opacity-90"
               src={image3}
               alt="app-platforms-img"
             />

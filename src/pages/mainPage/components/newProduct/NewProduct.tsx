@@ -12,7 +12,7 @@ export function NewProduct() {
   const {t} = useTranslation()
   // STYLES
   const liText = "flex flex-row items-center gap-4";
-  const liIcon = "text-[2.8rem] bg-[#f25c05ca] p-[0.2rem] rounded-lg";
+  const liIcon = "md:text-[2.8rem] text-[2.5rem] bg-[#f25c05ca] p-[0.2rem] rounded-lg";
 
   return (
     <div
@@ -55,7 +55,7 @@ export function NewProduct() {
         </p>
         <div className="md:mt-[3.125rem] mt-[5.125rem] flex justify-between">
           <div>
-            <ul className="text-[#ffffffe9] text-2xl flex flex-col gap-5">
+            <ul className="text-[#ffffffe9] md:text-2xl text-xl flex flex-col gap-5">
               <motion.li
                 initial="hidden"
                 whileInView="visible"

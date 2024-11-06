@@ -11,7 +11,7 @@ import { Link } from "react-router-dom";
 export function Accessories() {
   const { t } = useTranslation();
   return (
-    <div className="mt-[140px] w-full">
+    <div className="md:mt-[140px] w-full">
       {/* VIDEO */}
       <div className="w-full h-[50rem] relative flex justify-center items-center
       lg:mt-0 md:mt-[12.5rem] mt-[5.5rem]">
@@ -70,7 +70,7 @@ export function Accessories() {
                 hidden: { opacity: 0, x: -100 },
                 visible: { opacity: 1, x: 0 },
               }}
-              className="text-[#fffffff7] relative xl:text-6xl md:text-5xl text-4xl mb-[1.25rem] before:w-[28.125rem] before:h-[0.125rem] before:absolute before:rounded-xl before:bg-[#ffffff4c]
+              className="text-[#fffffff7] relative xl:text-6xl md:text-5xl text-4xl mb-[1.25rem] md:before:w-[28.125rem] before:w-[22.125rem] before:h-[0.125rem] before:absolute before:rounded-xl before:bg-[#ffffff4c]
             before:-top-8 before:-left-[12.5rem]"
             >
               <Trans
@@ -110,7 +110,7 @@ export function Accessories() {
               hidden: { opacity: 0, x: 100 },
               visible: { opacity: 1, x: 0 },
             }}
-            className="aspect-square lg:w-[37.5rem] w-[31.25rem]"
+            className="aspect-square lg:w-[37.5rem] md:w-[31.25rem] w-[18.25rem]"
             src={image1}
             alt=""
           />
@@ -159,7 +159,7 @@ export function Accessories() {
         </div>
       </div>
       {/* CAMERA LIGHT  CONTAINER */}
-      <div className="xl:w-[80%] xl:mt-[11.25rem] mt-[17.75rem] max-w-[1400px] mx-auto flex lg:flex-row flex-col justify-between lg:items-start items-center">
+      <div className="xl:w-[80%] xl:mt-[11.25rem] md:mt-[17.75rem] mt-[10.75rem] max-w-[1400px] mx-auto flex lg:flex-row flex-col justify-between lg:items-start items-center">
         {/* LIGHT IMAGE */}
         <motion.div
           initial="hidden"

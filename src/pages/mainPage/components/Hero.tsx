@@ -6,7 +6,7 @@ export function Hero() {
 
   return (
     <div
-      className="h-[56.25rem] flex justify-center items-center relative"
+      className="md:h-[56.25rem] h-[50.25rem] flex justify-center items-center relative"
     >
       <video
         autoPlay
@@ -28,7 +28,7 @@ export function Hero() {
       >
         {/* TEXT BODY */}
         <div className=" flex flex-col items-center justify-center text-center mb-[4.375rem]">
-          <h1 className="text-[#ffffffe9] text-6xl mb-[1.25rem] leading-none">
+          <h1 className="text-[#ffffffe9] md:text-6xl text-5xl mb-[1.25rem] leading-none">
             {t('home.heroTitle')}
           </h1>
           <p className="text-[#ffffff87] text-2xl">

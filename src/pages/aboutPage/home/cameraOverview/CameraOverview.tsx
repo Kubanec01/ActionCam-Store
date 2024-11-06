@@ -7,13 +7,11 @@ import { motion } from "framer-motion";
 export function CameraOverview() {
   const { t } = useTranslation();
 
-  // ! od 1024 nizsie daj foktu kamery a text pod seba
-
   return (
-    <div className="mt-[17.5rem]">
+    <div className="md:mt-[17.5rem] mt-[12.5rem]">
       {/* CAMERA */}
       <div className="max-w-[1300px] mx-auto flex lg:flex-row flex-col justify-center items-center">
-        <div className="flex xl:justify-center lg:justify-start justify-center lg:w-[50%]">
+        <div className="flex xl:justify-center lg:justify-start lg:w-[50%]">
           <motion.img
             initial="hidden"
             whileInView="visible"
@@ -26,7 +24,7 @@ export function CameraOverview() {
               hidden: { opacity: 0, x: -100 },
               visible: { opacity: 1, x: 0 },
             }}
-            className="object-contain lg:w-[80%] sm:w-[50%] w-[80%]"
+            className="object-contain lg:w-[80%] sm:w-[50%] w-[74%] md:ml-0 ml-3"
             src={image1}
             alt="goPro-11-img"
           />
@@ -37,7 +35,7 @@ export function CameraOverview() {
             scrollMarginTop: "18.75rem",
           }}
           id="camera-overview"
-          className="xl:ml-[3.125rem] lg:-ml-10 xl:mt-0 mt-14 lg:w-[50%] w-[90%]"
+          className="xl:ml-[3.125rem] lg:-ml-10 xl:mt-0 md:mt-14 mt-8 md:ml-0 ml-2 lg:w-[50%] w-[90%]"
         >
           <motion.h1
             initial="hidden"
@@ -51,7 +49,7 @@ export function CameraOverview() {
               hidden: { opacity: 0, x: 100 },
               visible: { opacity: 1, x: 0 },
             }}
-            className="text-5xl font-medium text-[#00000048] lg:text-start text-center"
+            className="md:text-5xl text-4xl font-medium text-[#00000048] lg:text-start md:text-center"
           >
             <Trans
               i18nKey={"about.cameraTitle"}
@@ -72,15 +70,14 @@ export function CameraOverview() {
               hidden: { opacity: 0, x: 100 },
               visible: { opacity: 1, x: 0 },
             }}
-            className="text-xl font-medium mt-3 xl:w-[80%] w-[98%] text-[#000000e0] lg:text-start text-center"
+            className="md:text-xl text-lg font-medium mt-3 xl:w-[80%] w-[93%] text-[#000000e0] lg:text-start md:text-center"
           >
             {t("about.cameraDesc")}
           </motion.p>
         </div>
       </div>
-
       {/* VIDEO */}
-      <div className="w-full h-[1000px] relative lg:mt-[9.375rem] mt-[15rem]">
+      <div className="w-full md:h-[1000px] h-[660px] relative lg:mt-[9.375rem] md:mt-[15rem] mt-[6rem]">
         <video
           autoPlay
           loop
@@ -96,17 +93,17 @@ export function CameraOverview() {
           className={`${style.videoContainer} w-full h-full flex absolute top-0 left-0 justify-center items-center p-6`}
         >
           <div className="max-w-[1100px] mt-[6.25rem]">
-            <h2 className={`${style.videoTitle} text-white text-5xl`}>
+            <h2 className={`${style.videoTitle} text-white md:text-5xl text-4xl`}>
               {t("about.adventureVideo.title")}
             </h2>
-            <p className="text-[#ffffffb8] text-2xl w-[60%] mt-3">
+            <p className="text-[#ffffffb8] md:text-2xl text-xl md:w-[60%] w-[90%] mt-3">
               {t("about.adventureVideo.desc")}
             </p>
             <button
               style={{
                 borderRadius: "0 10px",
               }}
-              className={`${style.videoButton} border-white border text-white text-2xl font-light w-[8.75rem] h-[3.125rem] mt-[4.375rem]`}
+              className={`${style.videoButton} border-white border text-white md:text-2xl text-xl font-light md:w-[8.75rem] w-[7.75rem] md:h-[3.125rem] h-[3rem] md:mt-[4.375rem] mt-[2.375rem]`}
             >
               <Link to="/">{t("about.videoButton")}</Link>
             </button>

@@ -23,10 +23,7 @@ export function AboutNavbar() {
   // STYLES
   const link = `${style.link}`;
   const smScreenLink = `${style.smScreenLink}`;
-  const smScreenLinks = "w-[50%] flex flex-col text-2xl sm:gap-4 gap-5";
-
-  // ! od 850 px nizsie zmen navbar
-
+  const smScreenLinks = "w-[50%] flex flex-col md:text-2xl text-xl sm:gap-4 gap-5";
 
   return (
     <div>
@@ -36,7 +33,7 @@ export function AboutNavbar() {
       {isAtTop ? (
         <Container className="xl:w-[70%] max-w-[1300px] mx-auto flex justify-between h-[9.375rem]">
           <Navbar.Brand className="flex items-center w-[18.75rem]">
-              <img className="object-cover w-full" src={logoImg} alt="" />
+              <img className="object-cover lg:w-full md:w-[80%]" src={logoImg} alt="logo-image" />
           </Navbar.Brand>
           <Nav className="flex justify-center items-center max-w-[400px] mr-[2.5rem] gap-16">
             <Link to="/shop" className="text-[#ffffffdc] text-2xl">
@@ -84,12 +81,12 @@ export function AboutNavbar() {
       style={{
         backdropFilter: "blur(10px)",
       }}
-      className="z-[2000] w-full fixed h-[7.5rem] bg-[#000000c3]"
+      className="z-[2000] w-full fixed h-[6.5rem] bg-[#000000c3]"
     >
       <Container className="w-full h-full mx-auto flex justify-between items-center">
-        <Navbar.Brand className="w-[40%] h-full pl-2">
+        <Navbar.Brand className="w-[40%] h-full pl-2 flex justify-center items-center">
           <img
-            className="w-full h-full object-cover opacity-85"
+            className="w-full h-[46%] object-cover opacity-85"
             src={logoImg}
             alt="goPro-logo-img"
           />
@@ -97,7 +94,7 @@ export function AboutNavbar() {
         <div className="h-full w-[20%] flex justify-center items-center">
           <button
             onClick={() => setIsOpen((isOpen) => !isOpen)}
-            className="text-white text-5xl"
+            className="text-white text-4xl"
           >
             {!isOpen ? <HiBars3BottomRight /> : <IoReturnUpBackOutline />}
           </button>
@@ -105,7 +102,7 @@ export function AboutNavbar() {
         <Nav
           className={`${
             isOpen ? style.activeNavbar : style.inactiveNavbar
-          } absolute z-[1000] w-full h-[14.25rem] bg-[#000000c3] p-2`}
+          } absolute z-[1000] top-[104px] w-full h-[14.25rem] bg-[#000000c3] p-2`}
         >
           <div className="sm:w-[60%] w-[70%] mx-auto flex justify-between mt-10 relative
           before:absolute before:w-[120%] before:h-[0.125rem] before:rounded-xl before:bg-[#ffffff39] before:-left-[8%] before:-top-12

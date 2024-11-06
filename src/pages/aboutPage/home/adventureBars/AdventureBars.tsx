@@ -38,7 +38,7 @@ export function AdventureBars() {
       {/* TEXT */}
       <div className="lg:mt-[11.25rem] mt-[15.625rem] mb-[3.75rem] flex flex-col items-center p-4 max-w-[1200px] mx-auto">
         <h1
-          className="lg:text-5xl text-6xl font-medium text-[#000000c2] relative text-center
+          className="lg:text-5xl md:text-6xl text-5xl font-medium text-[#000000c2] relative text-center
       before:bg-[#0000001f] before:w-[40%] before:h-[3px] before:rounded-xl before:absolute before:-top-8 before:left-[28.6%]"
         >
           {t("about.homeTitle")}
@@ -86,7 +86,7 @@ export function AdventureBars() {
         })}
       </div>
       {/* TEXT */}
-      <div className="mx-auto max-w-[1300px] mt-[2.813rem] p-2">
+      <div className="mx-auto max-w-[1300px] mt-[2.813rem] md:ml-0 ml-4 p-2">
         <motion.h1
           initial="hidden"
           whileInView="visible"
@@ -99,7 +99,7 @@ export function AdventureBars() {
             hidden: { opacity: 0, x: -100 },
             visible: { opacity: 1, x: 0 },
           }}
-          className="lg:text-3xl text-5xl md:w-full w-[80%] font-medium text-[#000000b4]"
+          className="lg:text-3xl md:text-5xl text-4xl md:w-full w-[80%] font-medium text-[#000000b4]"
         >
           {t("about.adventureBars.title")}
         </motion.h1>
@@ -115,7 +115,7 @@ export function AdventureBars() {
             hidden: { opacity: 0, x: -100 },
             visible: { opacity: 1, x: 0 },
           }}
-          className="lg:text-xl text-2xl font-medium text-[#0000008f] lg:w-[70%] w-[90%] mt-[0.5rem]"
+          className="lg:text-xl md:text-2xl text-xl font-medium text-[#0000008f] lg:w-[70%] w-[90%] mt-[0.5rem]"
         >
           {t("about.adventureBars.desc")}
         </motion.p>

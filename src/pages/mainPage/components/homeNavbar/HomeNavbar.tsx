@@ -16,7 +16,7 @@ export function HomeNavbar() {
   // STYLES
   const link = `${style.link}`;
   const smScreenLink = `${style.smScreenLink}`;
-  const smScreenLinks = "w-[50%] flex flex-col text-2xl sm:gap-4 gap-5";
+  const smScreenLinks = "w-[50%] flex flex-col md:text-2xl text-xl sm:gap-4 gap-5";
   
   const [isOpen, setIsOpen] = useState(false);
   const windowWidth = useScreenSize();
@@ -87,7 +87,7 @@ export function HomeNavbar() {
           style={{
             backdropFilter: "blur(10px)",
           }}
-          className="z-[1000] w-full fixed h-[7.5rem] bg-[#000000c3]"
+          className="z-[1000] w-full fixed h-[6.5rem] bg-[#000000c3]"
         >
           <Container className="w-full h-full mx-auto flex justify-between items-center">
             <Navbar.Brand className="w-[40%] h-full pl-2 flex justify-center items-center">
@@ -108,10 +108,10 @@ export function HomeNavbar() {
             <Nav
               className={`${
                 isOpen ? style.activeNavbar : style.inactiveNavbar
-              } absolute z-[1000] w-full h-[16.25rem] bg-[#000000c3]`}
+              } absolute top-[104px] z-[1000] w-full h-[16.25rem] bg-[#000000c3]`}
             >
               <div className="sm:w-[60%] w-[80%] mx-auto flex justify-between mt-10 relative
-              before:absolute before:w-[120%] before:h-[0.125rem] before:rounded-xl before:bg-[#ffffff39] before:-left-[8%] before:-top-12
+              before:absolute before:w-[116%] before:h-[0.125rem] before:rounded-xl before:bg-[#ffffff39] before:-left-[8%] before:-top-12
               after:absolute after:w-[80%] after:h-[0.125rem] after:rounded-xl after:bg-[#ffffff39] after:left-[10%] after:-bottom-12">
                 {/* page links */}
                 <div className={smScreenLinks}>
