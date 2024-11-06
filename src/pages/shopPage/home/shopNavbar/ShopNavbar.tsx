@@ -126,27 +126,27 @@ export function ShopNavbar() {
             backdropFilter: "blur(10px)",
           }}
           className={`${isOpen ? style.mdOpenBar : style.mdClosedBar}
-       sm:w-[90%] mx-auto flex flex-col justify-between mt-[1.25rem] bg-[#1a19198f]
+       md:w-[90%] mx-auto flex flex-col justify-between mt-[1.25rem] bg-[#1a19198f]
       border-2 border-[#f1f1f193] overflow-hidden`}
         >
           <Nav className="mx-auto w-[90%] h-[5.625rem] flex items-center justify-between text-[#ffffffac] text-lg">
-            <div className="flex sm:gap-20 gap-8 w-[50%]">
+            <div className="flex justify-start items-center sm:gap-20 gap-8 w-[50%]">
               <Link to="/about">
-                <AiOutlineQuestion className="sm:text-[2.7rem] text-[2.5rem]" />
+                <AiOutlineQuestion className="md:text-[2.7rem] text-[2rem]" />
               </Link>
               <Link to="/">
-                <HiOutlineHome className="sm:text-[2.7rem] text-[2.5rem]" />
+                <HiOutlineHome className="sm:text-[2.7rem] text-[2rem]" />
               </Link>
             </div>
-            <div className="relative">
+            <div className="relative flex justify-center items-center">
               <Button
                 onClick={() => setIsOpen((isOpen) => !isOpen)}
                 className={`${style.shoppingCartIcon}`}
               >
                 {isOpen ? (
-                  <IoReturnUpBackOutline className="mx-auto text-[2.8rem]" />
+                  <IoReturnUpBackOutline className="mx-auto md:text-[2.8rem] text-[2.5rem]" />
                 ) : (
-                  <PiShoppingCartLight className="mx-auto text-[2.8rem]" />
+                  <PiShoppingCartLight className="mx-auto md:text-[2.8rem] text-[2.5rem]" />
                 )}
               </Button>
               {productsCount > 0 ? (
@@ -165,7 +165,7 @@ export function ShopNavbar() {
             <div className="w-full h-[84%]">
               <div className="h-[88%] flex justify-normal mx-4 ">
                 <ul
-                  className={`${style.shoppingCartList} w-full h-full overflow-y-scroll pr-2`}
+                  className={`${style.shoppingCartList} w-full h-full overflow-y-scroll pr-1`}
                 >
                   {productsCount > 0 ? (
                     cartProducts.map((p) => {
@@ -173,7 +173,7 @@ export function ShopNavbar() {
                     })
                   ) : (
                     <div className="w-full h-full flex justify-start items-end">
-                      <h1 className="text-4xl text-[#ffffffbc] mb-[40px] font-light">
+                      <h1 className="md:text-4xl text-3xl text-[#ffffffbc] mb-[40px] font-light">
                         {t('navbar.emptyCart')}
                       </h1>
                     </div>
