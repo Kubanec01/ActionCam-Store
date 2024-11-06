@@ -28,10 +28,10 @@ export function ProductBars() {
             </div>
             {/* DESC */}
             <div className="h-[200px]">
-              <h1 className="text-[#ffffffe4] text-3xl text-center font-light">
+              <h1 className="text-[#ffffffe4] md:text-3xl text-2xl text-center font-light">
                 {p.name}
               </h1>
-              <p className="text-[#ffffff94] lg:text-lg text-base mt-[10px] lg:mx-10 mx-5 text-center">
+              <p className="text-[#ffffff94] lg:text-lg text-base md:font-normal font-light md:mt-[10px] mt-[3px] lg:mx-10 md:mx-5 mx-4 text-center">
                 {p.desc}
               </p>
             </div>
@@ -61,7 +61,7 @@ export function ProductBars() {
       style={{
         scrollMarginTop: "-300px"
       }}
-      className="mx-auto max-w-[1300px] mt-[7.5rem]">
+      className="mx-auto max-w-[1300px] md:mt-[7.5rem] mt-[5.5rem]">
         <motion.h1
           initial="hidden"
           whileInView="visible"
@@ -74,7 +74,7 @@ export function ProductBars() {
             hidden: { opacity: 0, y: 100 },
             visible: { opacity: 1, y: 0 },
           }}
-          className="text-[#ffffff38] md:text-8xl text-7xl font-[300]"
+          className="text-[#ffffff38] md:text-8xl text-5xl font-[300]"
         >
           <Trans
             i18nKey={"shop.camerasStoreTitle"}
@@ -85,7 +85,7 @@ export function ProductBars() {
           />
         </motion.h1>
       </div>
-      <div className="flex gap-10 mt-[13.125rem] flex-wrap justify-center max-w-[2400px] mx-auto">
+      <div className="flex gap-10 md:mt-[13.125rem] mt-[2.125rem] flex-wrap justify-center max-w-[2400px] mx-auto">
         {productBars("camera")}
       </div>
       {/* ACCESSORIES SECTION */}
@@ -94,7 +94,7 @@ export function ProductBars() {
       style={{
         scrollMarginTop: "-320px"
       }}
-      className="mx-auto max-w-[1300px] mt-[18.75rem]">
+      className="mx-auto max-w-[1300px] md:mt-[18.75rem] mt-[12.75rem]">
         <motion.h1
           initial="hidden"
           whileInView="visible"
@@ -107,7 +107,7 @@ export function ProductBars() {
             hidden: { opacity: 0, y: 100 },
             visible: { opacity: 1, y: 0 },
           }}
-          className="text-[#ffffff38] md:text-8xl text-7xl font-[300]"
+          className="text-[#ffffff38] md:text-8xl text-5xl font-[300]"
         >
            <Trans
             i18nKey={"shop.accessoriesStoreTitle"}
@@ -118,7 +118,7 @@ export function ProductBars() {
           />
         </motion.h1>
       </div>
-      <div className="flex gap-10 mt-[13.125rem] flex-wrap justify-center max-w-[2400px] mx-auto">
+      <div className="flex gap-10 md:mt-[13.125rem] mt-[2.125rem] flex-wrap justify-center max-w-[2400px] mx-auto">
         {productBars("accessory")}
       </div>
     </div>

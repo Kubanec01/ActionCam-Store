@@ -7,8 +7,8 @@ export function GlobalSales() {
 const {t} = useTranslation()
 
   return (
-    <div className="w-full relative mt-[2.5rem]">
-      <div className="h-[47.5rem] relative">
+    <div className="w-full relative md:mt-[2.5rem] mt-[1.5rem]">
+      <div className="md:h-[760px] h-[560px] relative">
         <Spline
           className="absolute top-0 left-0 opacity-60"
           scene="https://prod.spline.design/AUXjUcJAi-8z1Efl/scene.splinecode"
@@ -19,9 +19,9 @@ const {t} = useTranslation()
           }}
           className="w-full h-full relative z-[100] flex justify-center items-center"
         >
-          <div className="max-w-[1400px]  px-2">
+          <div className="max-w-[1400px] px-2">
             <h1
-              className="text-[#fee3f9] lg:text-[8rem] md:text-[7rem] text-[6rem] leading-none uppercase font-bold"
+              className="text-[#fee3f9] lg:text-[8rem] md:text-[7rem] text-[4rem] md:mt-0 mt-[100px] leading-none uppercase font-bold"
             >
               {t("shop.globalSalesTitle")}
             </h1>

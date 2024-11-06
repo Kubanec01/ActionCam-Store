@@ -57,16 +57,16 @@ export function AccessoryComplement() {
             ) : (
                 <div>
                   {/* TITLE AND DESC */}
-                  <div className="flex flex-col  text-center items-center">
-                    <h1 className="text-[#ffffffd5] md:text-5xl text-4xl mt-[6.25rem]">
+                  <div className="flex flex-col text-center items-center">
+                    <h1 className="text-[#ffffffd5] md:text-5xl text-3xl md:mt-[6.25rem] mt-[4.25rem]">
                       {p.name}
                     </h1>
-                    <p className="text-[#ffffff8e] md:text-lg text-base sm:w-[80%] md:mt-8 mt-4">
+                    <p className="text-[#ffffff8e] md:text-lg text-base sm:w-[80%] md:mt-8 mt-3">
                       {p.desc}
                     </p>
                   </div>
                   {/* IMAGE */}
-                  <div className="mx-auto md:w-[60%] sm:w-[70%] w-[80%]">
+                  <div className="mx-auto md:w-[60%] sm:w-[70%] w-[80%] mt-7">
                     <img
                       className="object-cover w-full h-full"
                       src={p.image}
@@ -76,10 +76,10 @@ export function AccessoryComplement() {
                   {/* PRICE AND BUTTON */}
                   <div className="flex md:w-[55%] sm:w-[70%] w-[84%] mx-auto justify-between my-[3.125rem]">
                     <p
-                      className={`${style.colorText} md:text-4xl text-3xl`}
+                      className={`${style.colorText} md:text-4xl text-2xl`}
                     >{`$${p.price}`}</p>
                     <button
-                      className={`${style.button} text-white md:text-2xl text-2xl`}
+                      className={`${style.button} text-white md:text-2xl text-xl`}
                       onClick={() => increaseProductsCount(p.id)}
                     >
                       {t("shop.itemButton")}
@@ -95,7 +95,7 @@ export function AccessoryComplement() {
 
   return (
     <div className="w-full p-4">
-      <div className="mb-[9.375rem] mt-[350px] mx-auto max-w-[1300px]">
+      <div className="mb-[9.375rem] md:mt-[350px] mt-[50px] mx-auto max-w-[1300px]">
         <motion.h1
           initial="hidden"
           whileInView="visible"
@@ -108,7 +108,7 @@ export function AccessoryComplement() {
             hidden: { opacity: 0, y: 100 },
             visible: { opacity: 1, y: 0 },
           }}
-          className="text-[#ffffff61] lg:text-7xl text-6xl font-medium shadow-inner"
+          className="text-[#ffffff61] lg:text-7xl md:text-6xl text-4xl font-medium shadow-inner"
         >
           <Trans
             i18nKey={"shop.accessoryComplementTitle"}

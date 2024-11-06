@@ -7,7 +7,7 @@ export function AboutLink() {
 const {t} = useTranslation()
 
   return (
-    <div className="w-full mt-[18.75rem]">
+    <div className="w-full md:mt-[18.75rem] mt-[8.75rem]">
       <div className="flex max-w-[1200px] mx-auto p-2">
         <motion.h1
           initial="hidden"
@@ -21,7 +21,7 @@ const {t} = useTranslation()
             hidden: { opacity: 0, y: 100 },
             visible: { opacity: 1, y: 0 },
           }}
-          className="text-[#ffffffa0] lg:text-7xl text-6xl font-medium shadow-inner"
+          className="text-[#ffffffa0] lg:text-7xl md:text-6xl text-4xl font-medium shadow-inner"
         >
           <Trans
           i18nKey={"shop.aboutLinkTitle"}
@@ -31,10 +31,10 @@ const {t} = useTranslation()
           />
         </motion.h1>
       </div>
-      <div className="text-[#ffffff] w-full flex justify-center mt-[15.625rem]">
+      <div className="text-[#ffffff] w-full flex justify-center md:mt-[15.625rem] mt-[12.625rem]">
     <Link
         to="/about"
-        className={`${style.button} text-2xl font-[400] md:w-[11.25rem] w-[9.25rem] h-[2.5rem] bg-[#53407f] rounded-2xl flex justify-center items-center`}
+        className={`${style.button} md:text-2xl text-lg font-[400] md:w-[11.25rem] w-[6.25rem] h-[2.5rem] bg-[#53407f] rounded-2xl flex justify-center items-center`}
     >
         {t("shop.aboutLinkButton")}
     </Link>

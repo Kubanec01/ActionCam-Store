@@ -126,11 +126,11 @@ export function ShopNavbar() {
             backdropFilter: "blur(10px)",
           }}
           className={`${isOpen ? style.mdOpenBar : style.mdClosedBar}
-       w-[90%] mx-auto flex flex-col justify-between mt-[1.25rem] bg-[#1a19198f]
+       sm:w-[90%] mx-auto flex flex-col justify-between mt-[1.25rem] bg-[#1a19198f]
       border-2 border-[#f1f1f193] overflow-hidden`}
         >
           <Nav className="mx-auto w-[90%] h-[5.625rem] flex items-center justify-between text-[#ffffffac] text-lg">
-            <div className="flex gap-20 w-[50%]">
+            <div className="flex sm:gap-20 gap-8 w-[50%]">
               <Link to="/about">
                 <AiOutlineQuestion className="sm:text-[2.7rem] text-[2.5rem]" />
               </Link>

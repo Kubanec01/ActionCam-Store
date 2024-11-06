@@ -6,11 +6,11 @@ export function ShopHero() {
   const { t } = useTranslation();
 
   return (
-    <div className="md:mt-[17.5rem] mt-[21.25rem]">
+    <div className="md:mt-[17.5rem] mt-[12.25rem]">
       {/* text */}
-      <div className="max-w-[1900px] mx-auto h-[13.75rem] flex items-center pr-2">
+      <div className="max-w-[1900px] mx-auto md:h-[13.75rem] flex items-center pr-2">
         <h1
-          className={`${style.title} text-[#ffffffac] xl:text-8xl text-7xl ml-12 font-normal opacity-90`}
+          className={`${style.title} text-[#ffffffac] xl:text-8xl md:text-7xl text-6xl md:ml-12 ml-4 font-normal opacity-90`}
         >
           <Trans
             i18nKey={"shop.heroTitle"}
@@ -21,7 +21,7 @@ export function ShopHero() {
         </h1>
       </div>
       {/* VIDEO */}
-      <div className="h-[37.5rem] w-full relative mt-[9.375rem]">
+      <div className="md:h-[37.5rem] h-[27.5rem] w-full relative mt-[9.375rem]">
         <video
           loop
           muted
@@ -68,7 +68,7 @@ export function ShopHero() {
                 hidden: { opacity: 0, y: 100 },
                 visible: { opacity: 1, y: 0 },
               }}
-              className="text-[#ffffff72] text-3xl lg:w-[29.25rem] w-[65%] mt-1"
+              className="text-[#ffffff72] md:text-3xl text-2xl lg:w-[29.25rem] md:w-[65%] w-[95%] md:mt-1 mt-3"
             >
               {t("shop.heroVideoDes")}
             </motion.p>
