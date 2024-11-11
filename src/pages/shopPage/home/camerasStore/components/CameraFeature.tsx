@@ -16,7 +16,7 @@ export function CameraFeature () {
             }}
             />
             </h1>
-          <p className="md:text-2xl text-xl text-[#ffffff9e] xl:mt-[5rem] md:mt-10 mt-5 lg:w-[85%]">
+          <p className="md:text-2xl text-xl text-[#ffffff9e] xl:mt-5 md:mt-10 mt-5 lg:w-[85%]">
             {t("shop.cameraFeatureDesc")}
           </p>
         </div>

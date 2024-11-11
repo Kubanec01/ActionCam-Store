@@ -91,12 +91,12 @@ export function Home() {
               hidden: { opacity: 0, x: 100 },
               visible: { opacity: 1, x: 0 },
             }}
-            className="xl:ml-[9.75rem] mt-[1.875rem]"
+            className="xl:ml-[9.75rem] ml-[1.2rem] mt-[1.875rem]"
           >
-            <h2 className="text-[#fffffff2] font-bold lg:text-2xl text-3xl mb-[0.125rem]">
+            <h2 className="text-[#fffffff2] md:font-bold lg:text-2xl text-3xl mb-[0.125rem]">
               {t('home.cameraTitle')}
             </h2>
-            <p className="text-[#ffffffa7] lg:text-lg text-xl w-[75%]">
+            <p className="text-[#ffffffa7] lg:text-lg md:text-xl text-md md:w-[75%] w-[85%]">
               {t("home.cameraDescription")}
             </p>
           </motion.div>

@@ -36,14 +36,14 @@ export function AdventureBars() {
   return (
     <div>
       {/* TEXT */}
-      <div className="lg:mt-[11.25rem] mt-[15.625rem] mb-[3.75rem] flex flex-col items-center p-4 max-w-[1200px] mx-auto">
+      <div className="lg:mt-[11.25rem] mt-[15.625rem] mb-[3.75rem] flex flex-col md:items-center p-4 max-w-[1200px] mx-auto">
         <h1
-          className="lg:text-5xl md:text-6xl text-5xl font-medium text-[#000000c2] relative text-center
+          className="lg:text-5xl md:text-6xl text-5xl font-medium text-[#000000c2] relative md:text-center
       before:bg-[#0000001f] before:w-[40%] before:h-[3px] before:rounded-xl before:absolute before:-top-8 before:left-[28.6%]"
         >
           {t("about.homeTitle")}
         </h1>
-        <p className="mt-[1.25rem] lg:w-[60%] w-[90%] text-center lg:text-lg text-xl font-medium text-[#000000c4]">
+        <p className="mt-[1.25rem] lg:w-[60%] w-[90%] md:text-center lg:text-lg text-xl font-medium text-[#000000c4]">
           {t("about.homeDesc")}
         </p>
       </div>
@@ -86,7 +86,7 @@ export function AdventureBars() {
         })}
       </div>
       {/* TEXT */}
-      <div className="mx-auto max-w-[1300px] mt-[2.813rem] md:ml-0 ml-4 p-2">
+      <div className="md:mx-auto ml-2 max-w-[1300px] mt-[2.813rem] p-2">
         <motion.h1
           initial="hidden"
           whileInView="visible"

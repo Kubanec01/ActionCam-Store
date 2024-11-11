@@ -6,7 +6,7 @@ export function Hero() {
 
   return (
     <div
-      className="md:h-[56.25rem] h-[50.25rem] flex justify-center items-center relative"
+      className="lg:h-[56.25rem] md:h-[50.25rem] h-[30.25rem] flex justify-center items-center relative"
     >
       <video
         autoPlay
@@ -27,11 +27,11 @@ export function Hero() {
         className="w-full h-full flex justify-center items-end z-50"
       >
         {/* TEXT BODY */}
-        <div className=" flex flex-col items-center justify-center text-center mb-[4.375rem]">
-          <h1 className="text-[#ffffffe9] md:text-6xl text-5xl mb-[1.25rem] leading-none">
+        <div className="flex flex-col items-center justify-center text-center md:mb-[4.375rem]">
+          <h1 className="text-[#ffffffe9] md:text-6xl text-3xl leading-none">
             {t('home.heroTitle')}
           </h1>
-          <p className="text-[#ffffff87] text-2xl">
+          <p className="text-[#ffffff87] md:text-2xl text-lg md:w-full w-[90%] md:mt-[1.25rem] mt-[0.5rem]">
             <Trans
             i18nKey="home.heroDesc"
              />

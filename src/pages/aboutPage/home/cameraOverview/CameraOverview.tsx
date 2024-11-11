@@ -49,7 +49,7 @@ export function CameraOverview() {
               hidden: { opacity: 0, x: 100 },
               visible: { opacity: 1, x: 0 },
             }}
-            className="md:text-5xl text-4xl font-medium text-[#00000048] lg:text-start md:text-center"
+            className="md:text-5xl text-4xl font-medium text-[#00000048] lg:text-start"
           >
             <Trans
               i18nKey={"about.cameraTitle"}
@@ -70,7 +70,7 @@ export function CameraOverview() {
               hidden: { opacity: 0, x: 100 },
               visible: { opacity: 1, x: 0 },
             }}
-            className="md:text-xl text-lg font-medium mt-3 xl:w-[80%] w-[93%] text-[#000000e0] lg:text-start md:text-center"
+            className="md:text-xl text-md font-medium mt-3 lg:w-[80%] md:w-[76%] w-[92%] text-[#000000e0] lg:text-start"
           >
             {t("about.cameraDesc")}
           </motion.p>
@@ -103,7 +103,7 @@ export function CameraOverview() {
               style={{
                 borderRadius: "0 10px",
               }}
-              className={`${style.videoButton} border-white border text-white md:text-2xl text-xl font-light md:w-[8.75rem] w-[7.75rem] md:h-[3.125rem] h-[3rem] md:mt-[4.375rem] mt-[2.375rem]`}
+              className={`${style.videoButton} border-white border text-white md:text-2xl text-xl font-light md:w-[8.75rem] w-[6.75rem] md:h-[3.125rem] h-[3rem] lg:mt-[4.375rem] mt-[2.375rem]`}
             >
               <Link to="/">{t("about.videoButton")}</Link>
             </button>

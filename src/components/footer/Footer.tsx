@@ -18,7 +18,7 @@ export function Footer() {
             {t('footer.footerTitle')}
           </h2>
           <p
-            className="text-[#ffffff6b] text-xl md:w-[75%] relative md:text-left text-center
+            className="text-[#ffffff6b] md:text-xl text-lg md:w-[75%] relative md:text-left text-center
           after:bg-[#ffffff2b] after:rounded-xl md:after:w-[90%] after:w-[100%] after:h-[2.5px] after:absolute after:-bottom-4 after:left-0"
           >
             {t('footer.footerQuote')}
