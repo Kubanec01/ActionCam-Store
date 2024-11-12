@@ -9,9 +9,9 @@ const resources = {
   en: {
     translation: {
       footer: {
-        footerTitle: "Capture the Thrill",
+        footerTitle: "Disclaimer:",
         footerQuote:
-          '"Adventure is not in the destination, but in the moments you dare to capture."',
+          "This is a fictional website created for educational purposes only. It is not affiliated with, endorsed by, or officially associated with GoPro. All product images and content are used for demonstration purposes and do not represent actual commercial sales.",
       },
       navbar: {
         accessories: "Accessories",
@@ -27,7 +27,8 @@ const resources = {
       },
       home: {
         heroTitle: "Capture your passion",
-        heroDesc: "Don't keep your experiences to yourself. <br /> Record, Share, Enjoy.",
+        heroDesc:
+          "Don't keep your experiences to yourself. <br /> Record, Share, Enjoy.",
         cameraTitle: "Ultra Light",
         cameraDescription:
           "Record your experiences in 5.3K footage at up to 60 fps and you can record 120 fps video in 4K. Only 153g will capture your life without you even realizing you're wearing it.",
@@ -139,9 +140,9 @@ const resources = {
   sk: {
     translation: {
       footer: {
-        footerTitle: "Zachyťte vzrušenie",
+        footerTitle: "Disclaimer:",
         footerQuote:
-          '"Dobrodružstvo nie je v cieli, ale vo chvíľach, ktoré sa odvážite zachytiť."',
+          "This is a fictional website created for educational purposes only. It is not affiliated with, endorsed by, or officially associated with GoPro. All product images and content are used for demonstration purposes and do not represent actual commercial sales.",
       },
       navbar: {
         accessories: "Príslušenstvo",
@@ -157,7 +158,8 @@ const resources = {
       },
       home: {
         heroTitle: "Zachyťte svoju vášeň",
-        heroDesc: "Nenechávajte si svoje skúsenosti pre seba. <br /> Nahrávajte, zdieľajte, užívajte si.",
+        heroDesc:
+          "Nenechávajte si svoje skúsenosti pre seba. <br /> Nahrávajte, zdieľajte, užívajte si.",
         cameraTitle: "Ultra ľahké",
         cameraDescription:
           "Zaznamenajte svoje zážitky v 5,3K stopáži rýchlosťou až 60 fps a 120 fps video v 4K. Len 153 g zachytí váš život bez toho, aby ste si uvedomili, že ho ju na sebe.",
@@ -170,7 +172,8 @@ const resources = {
         videoAccessoryDescTitle: "Viac Je Viac",
         videoAccessoryDescDesc:
           "S <1>doplnkami</1> pre každý šport nájdete to pravé pre vás. Od jednoduchých svetiel, cez mikrofóny až po stabilizátory, budete môcť posúvať svoje limity pre lepší <2>zážitok</2>.",
-        headAccessoryTitle1: "Ponuka na <br />perfektné <br />dobrodružné vybavenie.",
+        headAccessoryTitle1:
+          "Ponuka na <br />perfektné <br />dobrodružné vybavenie.",
         headAccessoryDesc1:
           "Vybavte sa držiakmi, ktoré musíte mať na turistiku, šnorchlovanie a ďalšie. Ideálne pre pohlcujúce zábery z vašeho uhla pohľadu.",
         lifeJacketTitle: "<1>Záchranná vesta</1> pre <br/> každú situáciu.",
@@ -282,8 +285,8 @@ i18n
     },
 
     detection: {
-      order: ["navigator"], 
-      caches: ["localStorage"], 
+      order: ["navigator"],
+      caches: ["localStorage"],
     },
   });
 

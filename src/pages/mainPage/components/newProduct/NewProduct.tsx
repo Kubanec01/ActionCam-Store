@@ -38,7 +38,7 @@ export function NewProduct() {
             hidden: { opacity: 0, x: 100 },
             visible: { opacity: 1, x: 0 },
           }}
-          className="object-cover absolute md:-right-[80px] -right-[32px] xl:top-[130px] lg:top-[350px] md:top-[900px] top-[692px] w-[580px] z-10"
+          className="object-cover absolute lg:-right-[80px] -right-[32px] xl:top-[130px] lg:top-[350px] md:top-[700px] top-[692px] lg:w-[580px] w-[400px] z-10"
           src={image1}
           alt="gopro-13-img"
         />
