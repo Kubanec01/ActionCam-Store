@@ -1,13 +1,15 @@
-# Money Saver App
+# Action Cam Store
 
 ![screenshot](./src/assets/app-screenshot-img.png)
+---
 ![screenshot](./src/assets/app-screenshot2-img.png)
+---
 ![screenshot](./src/assets/app-screenshot3-img.png)
 
-Money Saver App is an ongoing project designed to help you save money and improve financial literacy. It guides you through several steps to manage your savings in a space-like atmosphere. The app includes features for tracking expenses with numbers and percentages, the ability to store values, and much more.
+A simple application showcasing an engaging gallery of the latest products, information, and accessories for action cameras. The project features an e-commerce cart functionality complemented by a smooth and responsive UI experience.
 
 
-## 🚀 Live Demo
+## 🔗 Live Demo
 
 [Check out the live demo here](https://kubanec01.github.io/ActionCam-Store/)
 
@@ -18,18 +20,13 @@ Money Saver App is an ongoing project designed to help you save money and improv
 - Tailwind CSS
 - Framer Motion
 
-## 🌟 Features
+## 🌍 Features
 
-- Track your expenses with numbers and percentages.
-- Save and manage values for future reference.
-- Changes are stored in the local storage, ensuring data persists even after closing the app.
-- Space-like atmosphere for an engaging user experience.
-- Responsive and fast UI built.
-- Info section on the app with a brief description and instructions on how to use the application.
-- Fetch current time and date data from an external API to display real-time information.
-- Localization support with i18n, allowing the app to be used in different languages.
-- Option to choose from 3 different currencies for a personalized financial experience.
-
+- Persistent Data Storage – Changes and cart data are saved in local storage for convenience.
+- Simple Shopping Cart Functionality – Easily add, remove, and manage items in the cart.
+- Dynamic User Interface – Engaging and modern UI for an immersive browsing experience.
+- Seamless Interactions – Smooth transitions and responsive design for effortless navigation.
+- Interactive 3D Elements – Visually appealing elements integrated from Spline for a unique touch.
 
 
 ## 🔧 Installation
@@ -38,7 +35,7 @@ To run the project locally, follow these steps:
 
 1. Clone the repository:
 
-   - `git clone https://github.com/Kubanec01/Money_Saver_App.git`
+   - `git clone https://github.com/Kubanec01/ActionCam-Store.git`
 
 2. Navigate to the project directory:
 
