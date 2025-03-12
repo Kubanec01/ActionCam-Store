@@ -39,7 +39,7 @@ To run the project locally, follow these steps:
 
 2. Navigate to the project directory:
 
-   - `cd Money-Saver-App`
+   - `cd ActionCam-Store`
 
 3. Install the dependencies:
 
