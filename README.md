@@ -18,7 +18,9 @@ A simple application showcasing an engaging gallery of the latest products, info
 - React + Vite
 - TypeScript
 - Tailwind CSS
+- Bootstrap
 - Framer Motion
+- Spline
 
 ## 🌍 Features
 
