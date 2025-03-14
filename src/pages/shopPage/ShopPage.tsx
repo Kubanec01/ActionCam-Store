@@ -5,7 +5,7 @@ import { AboutLink } from "./home/aboutLink/AboutLink"
 import { ShopNavbar } from "./home/shopNavbar/ShopNavbar"
 
 
-export function ShopPage() {
+function ShopPage() {
 
 
     return (
@@ -20,3 +20,5 @@ export function ShopPage() {
         </>
     )
 }
+
+export default ShopPage

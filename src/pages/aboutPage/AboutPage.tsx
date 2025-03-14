@@ -2,7 +2,7 @@ import { AboutNavbar } from "./home/aboutNavbar/AboutNavbar";
 import { Hero } from "./home/hero/Hero";
 import { Home } from "./home/Home";
 
-export function AboutPage() {
+function AboutPage() {
   return (
     <div>
       <AboutNavbar />
@@ -11,3 +11,5 @@ export function AboutPage() {
     </div>
   );
 }
+
+export default AboutPage
