@@ -1,0 +1,1 @@
+import{r as e}from"./index-43izQ5KS.js";const n="/ActionCam-Store/assets/logo-img-D_6zjkws.png";function l(){const[o,t]=e.useState(!0);return e.useEffect(()=>{const s=()=>{window.scrollY===0?t(!0):t(!1)};return window.addEventListener("scroll",s),()=>{window.removeEventListener("scroll",s)}}),o}export{n as l,l as u};
